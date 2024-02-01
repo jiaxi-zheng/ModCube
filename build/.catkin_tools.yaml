@@ -1,0 +1,6 @@
+devel_space: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel
+install: false
+install_space: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/install
+profile: default
+source_space: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src
+workspace: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages

@@ -1,0 +1,8 @@
+prefix=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins
+
+Name: tauv_sim_gazebo_plugins
+Description: Description of tauv_sim_gazebo_plugins
+Version: 0.1.0
+Cflags: -I/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_sim_gazebo_plugins/include
+Libs: -L${prefix}/lib -ltauv_thruster_plugin -ltauv_navigation_state_plugin
+Requires: roscpp std_msgs geometry_msgs tauv_msgs tf2 tf2_ros

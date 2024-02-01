@@ -1,0 +1,8 @@
+prefix=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_auv_control_allocator
+
+Name: uuv_auv_control_allocator
+Description: Description of uuv_auv_control_allocator
+Version: 0.6.13
+Cflags: -I/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_auv_control_allocator/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime geometry_msgs std_msgs

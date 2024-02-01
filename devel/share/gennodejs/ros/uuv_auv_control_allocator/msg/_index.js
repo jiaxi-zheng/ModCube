@@ -1,0 +1,1 @@
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_auv_control_allocator/share/gennodejs/ros/uuv_auv_control_allocator/msg/_index.js

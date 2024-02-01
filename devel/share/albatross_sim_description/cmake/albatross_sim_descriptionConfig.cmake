@@ -1,0 +1,1 @@
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/albatross_sim_description/share/albatross_sim_description/cmake/albatross_sim_descriptionConfig.cmake

@@ -1,0 +1,8 @@
+prefix=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/install
+
+Name: tauv_sim_worlds
+Description: Description of tauv_sim_worlds
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

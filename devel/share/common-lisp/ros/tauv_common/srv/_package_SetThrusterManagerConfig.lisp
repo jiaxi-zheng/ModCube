@@ -1,0 +1,1 @@
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_common/share/common-lisp/ros/tauv_common/srv/_package_SetThrusterManagerConfig.lisp

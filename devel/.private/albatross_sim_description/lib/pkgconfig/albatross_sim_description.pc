@@ -1,0 +1,8 @@
+prefix=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/albatross_sim_description
+
+Name: albatross_sim_description
+Description: Description of albatross_sim_description
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

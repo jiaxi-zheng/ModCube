@@ -1,0 +1,41 @@
+
+(cl:in-package :asdf)
+
+(defsystem "tauv_msgs-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :geometry_msgs-msg
+               :sensor_msgs-msg
+               :std_msgs-msg
+               :tauv_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "FeatureDetectionsSync" :depends-on ("_package_FeatureDetectionsSync"))
+    (:file "_package_FeatureDetectionsSync" :depends-on ("_package"))
+    (:file "GetCameraInfo" :depends-on ("_package_GetCameraInfo"))
+    (:file "_package_GetCameraInfo" :depends-on ("_package"))
+    (:file "GetTrajectory" :depends-on ("_package_GetTrajectory"))
+    (:file "_package_GetTrajectory" :depends-on ("_package"))
+    (:file "MapFind" :depends-on ("_package_MapFind"))
+    (:file "_package_MapFind" :depends-on ("_package"))
+    (:file "MapFindClosest" :depends-on ("_package_MapFindClosest"))
+    (:file "_package_MapFindClosest" :depends-on ("_package"))
+    (:file "MapFindOne" :depends-on ("_package_MapFindOne"))
+    (:file "_package_MapFindOne" :depends-on ("_package"))
+    (:file "RunMission" :depends-on ("_package_RunMission"))
+    (:file "_package_RunMission" :depends-on ("_package"))
+    (:file "SetPose" :depends-on ("_package_SetPose"))
+    (:file "_package_SetPose" :depends-on ("_package"))
+    (:file "SetTargetPose" :depends-on ("_package_SetTargetPose"))
+    (:file "_package_SetTargetPose" :depends-on ("_package"))
+    (:file "SonarControl" :depends-on ("_package_SonarControl"))
+    (:file "_package_SonarControl" :depends-on ("_package"))
+    (:file "SyncAlarms" :depends-on ("_package_SyncAlarms"))
+    (:file "_package_SyncAlarms" :depends-on ("_package"))
+    (:file "TuneController" :depends-on ("_package_TuneController"))
+    (:file "_package_TuneController" :depends-on ("_package"))
+    (:file "TuneDynamics" :depends-on ("_package_TuneDynamics"))
+    (:file "_package_TuneDynamics" :depends-on ("_package"))
+    (:file "TunePIDPlanner" :depends-on ("_package_TunePIDPlanner"))
+    (:file "_package_TunePIDPlanner" :depends-on ("_package"))
+    (:file "UpdateDynamicsParameterConfigs" :depends-on ("_package_UpdateDynamicsParameterConfigs"))
+    (:file "_package_UpdateDynamicsParameterConfigs" :depends-on ("_package"))
+  ))

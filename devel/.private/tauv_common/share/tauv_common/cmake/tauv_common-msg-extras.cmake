@@ -1,0 +1,2 @@
+set(tauv_common_MESSAGE_FILES "")
+set(tauv_common_SERVICE_FILES "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_common/srv/GetThrusterCurve.srv;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_common/srv/ThrusterManagerInfo.srv;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_common/srv/SetThrusterManagerConfig.srv;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_common/srv/GetThrusterManagerConfig.srv")

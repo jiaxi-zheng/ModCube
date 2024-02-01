@@ -1,0 +1,7 @@
+set(tauv_common_SETUP_PY_SETUP_MODULE "distutils.core")
+set(tauv_common_SETUP_PY_VERSION "0.6.1")
+set(tauv_common_SETUP_PY_SCRIPTS "scripts/thruster_allocator;scripts/keyboard_planner;scripts/teleop_planner;scripts/controller;scripts/mpc_planner;scripts/depth_estimation;scripts/state_estimation;scripts/thruster_manager;scripts/dynamics_parameter_estimator;scripts/alarm_server;scripts/detector_bucket;scripts/log_detections;scripts/message_printer;scripts/retare_sub_position;scripts/watchdogs;scripts/darknet_transformer;scripts/bucket_to_tf;scripts/shape_detector;scripts/albatross_state_estimation")
+set(tauv_common_SETUP_PY_PACKAGES "controllers;planners;state_estimation;depth_estimation;sonar;vision;teleop;transform_manager;thruster_manager;dynamics_parameter_estimator;dynamics;motion;tauv_alarms;tauv_util;motion_client;tauv_messages;trajectories;albatross_state_estimation")
+set(tauv_common_SETUP_PY_PACKAGE_DIRS "src/controllers;src/planners;src/state_estimation;src/depth_estimation;src/sonar;src/vision;src/teleop;src/transform_manager;src/thruster_manager;src/dynamics_parameter_estimator;src/dynamics;src/motion;src/tauv_alarms;src/tauv_util;src/motion_client;src/tauv_messages;src/trajectories;src/albatross_state_estimation")
+set(tauv_common_SETUP_PY_MODULES "")
+set(tauv_common_SETUP_PY_MODULE_DIRS "")

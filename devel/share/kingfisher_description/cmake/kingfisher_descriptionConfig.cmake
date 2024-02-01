@@ -1,0 +1,1 @@
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/kingfisher_description/share/kingfisher_description/cmake/kingfisher_descriptionConfig.cmake

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_world_plugins/setup.sh

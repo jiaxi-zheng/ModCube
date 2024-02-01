@@ -1,0 +1,1 @@
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_vehicle/share/roseus/ros/tauv_vehicle/manifest.l

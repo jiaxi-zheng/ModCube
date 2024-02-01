@@ -1,0 +1,60 @@
+<launch>
+    <arg name="namespace"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_0_static_publisher"
+          args="0.07 0.07 -0.07 -0.785 0 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_0" />
+<!-- [ x: 1.5710842, y: -0.7849999, z: 0.0002035 ] -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_1_static_publisher"
+          args="0.07 -0.07 -0.07 0.785 0 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_1" />
+<!-- [ x: 1.5710842, y: 0.7849999, z: -0.0002035 ] -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_2_static_publisher"
+          args="-0.07 0.07 0.07 -2.356 0 -1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_2" />
+<!-- [ x: 1.5710844, y: 0.7855926, z: 3.1413889 ] -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_3_static_publisher"
+          args="-0.07 -0.07 0.07 2.356 0 -1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_3" />
+<!-- [ x: 1.5710844, y: -0.7855926, z: -3.1413889 ] -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_4_static_publisher"
+          args="0.07 0.07 0.07 0 -1.571 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_4" />
+<!-- [ x: -2.3557963, y: 1.5704511, z: 0 ] -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_5_static_publisher"
+          args="0.07 -0.07 0.07 0 -1.571 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_5" />
+<!-- [ x: -0.7857963, y: -1.5707963, z: 0 ] -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_6_static_publisher"
+          args="-0.07 0.07 -0.07 0 -1.571 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_6" />
+<!-- [ x: 0.7857963, y: -1.5707963, z: 0 ] -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_7_static_publisher"
+          args="-0.07 -0.07 -0.07 0 -1.571 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_7" />
+<!-- [ x: 2.3557963, y: 1.5704511, z: 0 ] -->
+
+    <!--    20in forward, 0in right, 2in up -->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="oakd_front_static_publisher"
+          args="0.508 0 -0.0508 1.57 0 1.57 $(arg namespace)/vehicle $(arg namespace)/oakd_front" /> -->
+
+    <!--    10in forward, 0in right, 5in down-->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="oakd_bottom_static_publisher"
+          args="0.254 0 0.127 -3.14 0 0 $(arg namespace)/vehicle $(arg namespace)/oakd_bottom" /> -->
+</launch>
+
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_0_static_publisher"
+          args="0.07 0.07 -0.07 -0.785 0 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_0" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_1_static_publisher"
+          args="0.07 -0.07 -0.07 0.785 0 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_1" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_2_static_publisher"
+          args="-0.07 0.07 0.07 -2.356 0 -1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_2" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_3_static_publisher"
+          args="-0.07 -0.07 0.07 2.356 0 -1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_3" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_4_static_publisher"
+          args="0.07 0.07 0.07 -1.571 -0.785 -1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_4" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_5_static_publisher"
+          args="0.07 -0.07 0.07 1.571 -0.785 -1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_5" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_6_static_publisher"
+          args="-0.07 0.07 -0.07 -1.571 -0.785 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_6" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="thruster_7_static_publisher"
+          args="-0.07 -0.07 -0.07 1.571 -0.785 1.571 $(arg namespace)/vehicle $(arg namespace)/thruster_7" /> -->

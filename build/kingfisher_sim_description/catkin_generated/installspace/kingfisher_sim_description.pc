@@ -1,0 +1,8 @@
+prefix=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/install
+
+Name: kingfisher_sim_description
+Description: Description of kingfisher_sim_description
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

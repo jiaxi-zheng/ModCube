@@ -1,0 +1,15 @@
+digraph G {
+"kf/vehicle" -> "kf/thruster_0"[label="Broadcaster: /kf/thruster_0_static_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 32.944 sec old)\nBuffer length: 0.000 sec\n"];
+"kf/odom" -> "kf/vehicle"[label="Broadcaster: /gazebo\nAverage rate: 50.202 Hz\nMost recent transform: 32.930 ( 0.014 sec old)\nBuffer length: 4.960 sec\n"];
+"kf/vehicle" -> "kf/thruster_1"[label="Broadcaster: /kf/thruster_1_static_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 32.944 sec old)\nBuffer length: 0.000 sec\n"];
+"kf/vehicle" -> "kf/thruster_2"[label="Broadcaster: /kf/thruster_2_static_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 32.944 sec old)\nBuffer length: 0.000 sec\n"];
+"kf/vehicle" -> "kf/thruster_3"[label="Broadcaster: /kf/thruster_3_static_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 32.944 sec old)\nBuffer length: 0.000 sec\n"];
+"kf/vehicle" -> "kf/thruster_4"[label="Broadcaster: /kf/thruster_4_static_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 32.944 sec old)\nBuffer length: 0.000 sec\n"];
+"kf/vehicle" -> "kf/thruster_5"[label="Broadcaster: /kf/thruster_5_static_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 32.944 sec old)\nBuffer length: 0.000 sec\n"];
+"kf/vehicle" -> "kf/thruster_7"[label="Broadcaster: /kf/thruster_7_static_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 32.944 sec old)\nBuffer length: 0.000 sec\n"];
+"kf/vehicle" -> "kf/thruster_6"[label="Broadcaster: /kf/thruster_6_static_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 32.944 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 32.944"[ shape=plaintext ] ;
+ }->"kf/odom";
+}
