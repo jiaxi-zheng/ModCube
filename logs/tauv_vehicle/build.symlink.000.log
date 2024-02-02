@@ -1,0 +1,28 @@
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/roseus/ros/tauv_vehicle/manifest.l
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_vehicle/cmake/tauv_vehicleConfig.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_vehicle/cmake/tauv_vehicle-msg-paths.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_vehicle/cmake/tauv_vehicle-msg-extras.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_vehicle/cmake/tauv_vehicleConfig-version.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/sonar
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/arduino
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/thrusters
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/pinger_localizer
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/teledyne_dvl
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/battery
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/depth_sensor
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/oakd
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/xsens_imu_sync
+Warning: Cannot symlink from /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_vehicle/lib/python3/dist-packages/sonar/__init__.py to existing file /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/sonar/__init__.py
+Warning: Source hash: c28912a1776d3bdfefab32a89e98692e
+Warning: Dest hash: f4ec6b5ad18c64a656c50ce74aacfcc0
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/arduino/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/thrusters/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/pinger_localizer/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/teledyne_dvl/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/battery/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/depth_sensor/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/oakd/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/tauv_vehicle/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/xsens_imu_sync/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/tauv_vehicle.pc
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/tauv_vehicle/xsens_imu

@@ -34,16 +34,9 @@ class NewMinSnapTrajectory(Trajectory):
         # For each axis, if a correction is currently running
         # compute t based on the correction start time and plug the positions and velocities into the returned poses and twists
 
-        print("I'm here NewMinSnapTrajectory 1 ********************")
-
         self.status = TrajectoryStatus.PENDING
         self._start_pose = start_pose
         self._start_twist = start_twist
-
-        print("self._start_pose : ")
-        print(self._start_pose)
-        print("self._start_twist : ")
-        print(self._start_twist)
 
         self._correction_planner = ScurvePlanner()
         self._correction_start_times: [Optional[float]] = [None] * 6
@@ -68,21 +61,10 @@ class NewMinSnapTrajectory(Trajectory):
         start_waypoint.add_hard_directional_constraint(order=1, values=start_dirvec)
         position_waypoints.append(start_waypoint)
 
-        print("I'm here NewMinSnapTrajectory 2 ********************")
-
         for (i, pose) in enumerate(poses):
-            print("I'm here NewMinSnapTrajectory 3 ********************")
-            
-            # print("enumerate(poses) : ")
-            # print(list(enumerate(poses)))
-            # print("pose.position : ")
-            # print(pose.position)
 
             position = tl(pose.position)
-            print("I'm here NewMinSnapTrajectory 4 ********************")
-
             dirvec = self._quat_to_dirvec(pose.orientation)
-
             waypoint = TrajectoryWaypoint(tuple(position))
 
             if i == len(poses) - 1:
@@ -90,8 +72,6 @@ class NewMinSnapTrajectory(Trajectory):
 
             position_waypoints.append(waypoint)
         
-        print("I'm here NewMinSnapTrajectory 5 ********************")
-
         self._position_traj = OptimalTrajectory(
             order=5,
             ndims=3,
@@ -100,7 +80,6 @@ class NewMinSnapTrajectory(Trajectory):
             continuity_order=2,
             constraint_check_dt=0.05
         )
-        print("I'm here NewMinSnapTrajectory 6 ********************")
 
         self._position_traj.solve(
             aggressiveness=None,
@@ -116,27 +95,15 @@ class NewMinSnapTrajectory(Trajectory):
         start_orientation_waypoint.set_time(0)
         start_orientation_waypoint.add_hard_constraints(order=1, values=start_angular_velocity)
         orientation_waypoints.append(start_orientation_waypoint)
-        print("I'm here NewMinSnapTrajectory 7 ********************")
 
         if self._orient_forward:
             orientation_times = np.arange(0, times[-1], 0.5)
 
             last_yaw = 0
 
-            print("orientation_times : ")
-            print(orientation_times)
-
-
-            print("I'm here NewMinSnapTrajectory 8 ********************")
-
             for (i, time) in enumerate(orientation_times[1:]):
-                
-                print("time : ")
-                print(time)
-                
-                linear_velocity = self._position_traj.val(time, dim=None, order=1)
 
-                print("I'm here NewMinSnapTrajectory 9 ********************")
+                linear_velocity = self._position_traj.val(time, dim=None, order=1)
 
                 norm_linear_velocity = linear_velocity / np.linalg.norm(linear_velocity)
                 
@@ -182,7 +149,6 @@ class NewMinSnapTrajectory(Trajectory):
             continuity_order=2,
             constraint_check_dt=0.05
         )
-        print("I'm here NewMinSnapTrajectory 9 ********************")
 
         self._orientation_traj.solve(
             aggressiveness=None,
@@ -191,11 +157,9 @@ class NewMinSnapTrajectory(Trajectory):
             T=times[-1],
             skip_times=True,
         )
-        print("I'm here NewMinSnapTrajectory 10 ********************")
 
         self._start_time: rospy.Time = rospy.Time.now()
         self._duration: rospy.Duration = rospy.Duration.from_sec(times[-1])
-        print("I'm here NewMinSnapTrajectory 11 ********************")
 
         self.status = TrajectoryStatus.INITIALIZED
 
@@ -282,7 +246,7 @@ class NewMinSnapTrajectory(Trajectory):
                 continue
 
             print('correcting', i)
-            print(current_pose[i], expected_pose[i])
+            # print(current_pose[i], expected_pose[i])
 
             correction_duration = self._correction_duration_scales[i] * abs(current_pose[i] - expected_pose[i])
 
@@ -373,7 +337,6 @@ class NewMinSnapTrajectory(Trajectory):
         req: GetTrajectoryRequest = GetTrajectoryRequest()
         req.header.stamp = rospy.Time.now()
         req.header.frame_id = 'odom'
-
         req.curr_time = self._start_time
         req.curr_pose = self._start_pose
         req.curr_twist = self._start_twist

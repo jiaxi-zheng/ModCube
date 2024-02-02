@@ -3,6 +3,7 @@ project(tauv_msgs)
 
 find_package(catkin REQUIRED geometry_msgs sensor_msgs std_msgs vision_msgs jsk_recognition_msgs message_generation)
 
+
 add_message_files(
   FILES
   AlarmReport.msg
@@ -35,6 +36,7 @@ add_message_files(
   PingDetection.msg
 )
 
+
 add_service_files(
   FILES
   FeatureDetectionsSync.srv
@@ -46,6 +48,8 @@ add_service_files(
   SyncAlarms.srv
   TuneDynamics.srv
   TuneController.srv
+  # GetTrajectoryResponse.srv
+  # GetTrajectoryRequest.srv
   TunePIDPlanner.srv
   GetTrajectory.srv
   SetTargetPose.srv
@@ -53,7 +57,6 @@ add_service_files(
   RunMission.srv
   UpdateDynamicsParameterConfigs.srv
 )
-
 
 generate_messages(
   DEPENDENCIES

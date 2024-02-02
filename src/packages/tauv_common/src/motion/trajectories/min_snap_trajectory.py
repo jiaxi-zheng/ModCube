@@ -253,6 +253,7 @@ class MinSnapTrajectory(Trajectory):
         self.status = TrajectoryStatus.EXECUTING
 
     def get_status(self):
+        print("I'm here min_snap_trajectory 12 ********************")
         if self.time_remaining() <= 0:
             self.status = TrajectoryStatus.FINISHED
 

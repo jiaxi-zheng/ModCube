@@ -9,8 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/lib:$LD_LIBRARY_PATH"
-export PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin:$PATH"
 export PWD='/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_cascaded_pid'
-export PYTHONPATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/lib/python3/dist-packages:/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages:$PYTHONPATH"
+export PYTHONPATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_cascaded_pids:$ROS_PACKAGE_PATH"

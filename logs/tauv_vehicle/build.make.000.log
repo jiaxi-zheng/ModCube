@@ -1,0 +1,37 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target tauv_msgs_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target tauv_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target tauv_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target tauv_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target tauv_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target tauv_vehicle_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_nodejs
+[ 20%] [32mBuilding CXX object CMakeFiles/xsens_imu.dir/src/xsens_imu/main.cpp.o[0m
+[ 20%] Built target tauv_vehicle_generate_messages_cpp
+[ 40%] [32mBuilding CXX object CMakeFiles/xsens_imu.dir/src/xsens_imu/xdainterface.cpp.o[0m
+[ 60%] [34m[1mGenerating EusLisp manifest code for tauv_vehicle[0m
+[ 60%] Built target sensor_msgs_generate_messages_nodejs
+[ 80%] [32mBuilding CXX object CMakeFiles/xsens_imu.dir/src/xsens_imu/xdacallback.cpp.o[0m
+[ 80%] Built target tauv_vehicle_generate_messages_lisp
+[ 80%] Built target tauv_vehicle_generate_messages_nodejs
+[ 80%] Built target tauv_vehicle_generate_messages_eus
+[ 80%] Built target tauv_vehicle_generate_messages
+[100%] [32m[1mLinking CXX executable /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_vehicle/lib/tauv_vehicle/xsens_imu[0m
+[100%] Built target xsens_imu

@@ -1,0 +1,6 @@
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_sim/cmake/tauv_simConfig-version.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_sim/cmake/tauv_simConfig.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/cmake.lock
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/disparity_to_depth
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/cameras/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/tauv_sim.pc

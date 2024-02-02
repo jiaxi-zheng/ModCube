@@ -8,7 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins_msgs:$CMAKE_PREFIX_PATH"
-export PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin:$PATH"
 export PWD='/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_sensor_ros_plugins_msgs'
 export PYTHONPATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins_msgs/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

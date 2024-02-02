@@ -95,9 +95,9 @@ CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/jiaxi/Projects/aCube/pl
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/AddWaypoint.srv
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/AddWaypoint.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from uuv_control_msgs/AddWaypoint.srv"
@@ -133,9 +133,9 @@ CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/jiaxi/Projects/aCube/pl
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/GetWaypoints.srv
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GetWaypoints.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from uuv_control_msgs/GetWaypoints.srv"
@@ -143,9 +143,9 @@ CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/jiaxi/Projects/aCube/pl
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/GoTo.srv
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/GoTo.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from uuv_control_msgs/GoTo.srv"
@@ -168,8 +168,8 @@ CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/jiaxi/Projects/aCube/pl
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitCircularTrajectory.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitCircularTrajectory.srv
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitCircularTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from uuv_control_msgs/InitCircularTrajectory.srv"
@@ -177,8 +177,8 @@ CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/jiaxi/Projects/aCube/pl
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitHelicalTrajectory.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitHelicalTrajectory.srv
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitHelicalTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from uuv_control_msgs/InitHelicalTrajectory.srv"
@@ -186,8 +186,8 @@ CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/jiaxi/Projects/aCube/pl
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitRectTrajectory.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitRectTrajectory.srv
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitRectTrajectory.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from uuv_control_msgs/InitRectTrajectory.srv"
@@ -195,11 +195,11 @@ CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/jiaxi/Projects/aCube/pl
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitWaypointSet.srv
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/String.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/InitWaypointSet.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from uuv_control_msgs/InitWaypointSet.srv"
@@ -272,45 +272,45 @@ CMakeFiles/uuv_control_msgs_generate_messages_cpp: /home/jiaxi/Projects/aCube/pl
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Trajectory.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Accel.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Trajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating C++ code from uuv_control_msgs/Trajectory.msg"
 	cd /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs && /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Trajectory.msg -Iuuv_control_msgs:/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Accel.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating C++ code from uuv_control_msgs/TrajectoryPoint.msg"
 	cd /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs && /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/TrajectoryPoint.msg -Iuuv_control_msgs:/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Waypoint.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/Waypoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating C++ code from uuv_control_msgs/Waypoint.msg"
 	cd /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs && /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg -Iuuv_control_msgs:/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/std_msgs/msg/Time.msg
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating C++ code from uuv_control_msgs/WaypointSet.msg"
 	cd /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs && /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_control_msgs/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/WaypointSet.msg -Iuuv_control_msgs:/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p uuv_control_msgs -o /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs -e /opt/ros/noetic/share/gencpp/cmake/..

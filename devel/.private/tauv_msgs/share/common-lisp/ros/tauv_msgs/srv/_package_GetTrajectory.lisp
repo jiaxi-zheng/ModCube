@@ -17,6 +17,8 @@
           TWISTS
           SUCCESS-VAL
           SUCCESS
+          AUTO_TWISTS-VAL
+          AUTO_TWISTS
           MESSAGE-VAL
           MESSAGE
 ))

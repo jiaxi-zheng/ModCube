@@ -83,9 +83,9 @@ class Controller:
         # print("self._pids[0]", self._pids[0])
         # print("self._pids[1]", self._pids[1])
         # print("self._pids[2]", self._pids[2])
-        print("roll_effort", roll_effort)
-        print("pitch_effort", pitch_effort)
-        print("z_effort", z_effort)
+        # print("roll_effort", roll_effort)
+        # print("pitch_effort", pitch_effort)
+        # print("z_effort", z_effort)
         # print("#####################")
 
         vd = np.array([
@@ -97,13 +97,13 @@ class Controller:
             cmd.a_yaw
         ])
 
-        print("cmd.use_setpoint_z", cmd.use_setpoint_z)
-        print("cmd.use_setpoint_roll", cmd.use_setpoint_roll)
-        print("cmd.use_setpoint_pitch", cmd.use_setpoint_pitch)
-        print("cmd.a_roll", cmd.a_roll)
-        print("cmd.a_pitch", cmd.a_pitch)
-        print("cmd.a_z", cmd.a_z)
-        print("#####################")
+        # print("cmd.use_setpoint_z", cmd.use_setpoint_z)
+        # print("cmd.use_setpoint_roll", cmd.use_setpoint_roll)
+        # print("cmd.use_setpoint_pitch", cmd.use_setpoint_pitch)
+        # print("cmd.a_roll", cmd.a_roll)
+        # print("cmd.a_pitch", cmd.a_pitch)
+        # print("cmd.a_z", cmd.a_z)
+        # print("#####################")
 
         tau = self._dyn.compute_tau(eta, v, vd)
 

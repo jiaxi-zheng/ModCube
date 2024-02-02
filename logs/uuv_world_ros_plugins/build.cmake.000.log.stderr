@@ -1,0 +1,23 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[33mCMake Warning (dev) at /usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+[36mCall Stack (most recent call first):[0m
+  /usr/local/lib/python3.8/dist-packages/cmake/data/share/cmake-3.26/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  /opt/ros/noetic/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:2 (find_package)
+  /opt/ros/noetic/share/gazebo_dev/cmake/gazebo_devConfig.cmake:222 (include)
+  /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/uuv_world_plugins/cmake/uuv_world_pluginsConfig.cmake:197 (find_package)
+  /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  CMakeLists.txt:7 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m

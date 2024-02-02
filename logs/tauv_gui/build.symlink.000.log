@@ -1,0 +1,7 @@
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_gui/cmake/tauv_guiConfig-version.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_gui/cmake/tauv_guiConfig.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/publish_sonar_map
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/map_visualizer
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/sonar_map_publisher/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/map_visualizer/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/tauv_gui.pc

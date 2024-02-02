@@ -48,15 +48,11 @@ class PIDPlanner:
 
         # TODO: Update this to check if the trajectory target wants to include roll and pitch
         # Or, always have the pid planner run the roll and pitch controls now? What do we lose
-
         target_pose, target_world_twist = self._get_target()
-
         if target_pose is None or target_world_twist is None:
             return
-
         target_position = tl(target_pose.position)
         target_orientation = quat_to_rpy(target_pose.orientation)
-        print("target_pose.orientation : ", target_pose.orientation)
 
         # TODO: consider velocity feed-forward
         target_world_velocity = tl(target_world_twist.linear)
@@ -75,9 +71,6 @@ class PIDPlanner:
         position_error = current_position - target_position
         orientation_error = current_orientation - target_orientation
 
-        print("current_orientation : ", current_orientation)
-        print("target_orientation : ", target_orientation)
-
         world_position_effort = np.zeros(3)
         for i in range(3):
             world_position_effort[i] = self._pids[i](position_error[i]) + position_acceleration[i]
@@ -89,8 +82,6 @@ class PIDPlanner:
         R = Rotation.from_euler('ZYX', np.flip(current_orientation)).inv()
 
         body_position_effort = R.apply(world_position_effort)
-
-        print("self._tau : ", self._tau)
 
         #low-pass filter
         body_position_effort = self._tau[0:3] * self._body_position_effort + (1 - self._tau[0:3]) * body_position_effort
@@ -107,11 +98,6 @@ class PIDPlanner:
         # if self._use_roll_pitch:
         controller_command.a_roll = world_angular_effort[0]
         controller_command.a_pitch = world_angular_effort[1]
-
-        print("controller_command.a_roll", controller_command.a_roll)
-        print("controller_command.a_pitch", controller_command.a_pitch)
-        print("#################W###########")
-
         # else:
         #     controller_command.use_setpoint_roll = True
         #     controller_command.use_setpoint_pitch = True
@@ -176,7 +162,6 @@ class PIDPlanner:
         # Compute efforts from current pose, current twist, target pose, target twist
         # Then send as a command
 
-
     def _get_target(self) -> (Optional[Pose], Optional[Twist]):
         pose = build_pose(tl(self._navigation_state.position), tl(self._navigation_state.orientation))
         body_twist = build_twist(tl(self._navigation_state.linear_velocity), tl(self._navigation_state.euler_velocity))
@@ -200,6 +185,9 @@ class PIDPlanner:
 
         target_pose = res.poses[0]
         target_world_twist = res.twists[0]
+        # print("target_pose", target_pose)
+        # print("target_world_twist", target_world_twist)
+        # print("################################")
 
         return target_pose, target_world_twist
 

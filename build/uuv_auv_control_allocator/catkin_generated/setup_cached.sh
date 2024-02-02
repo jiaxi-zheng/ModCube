@@ -9,7 +9,6 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_auv_control_allocator:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_auv_control_allocator/lib:$LD_LIBRARY_PATH"
-export PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin:$PATH"
 export PWD='/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_auv_control_allocator'
 export PYTHONPATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_auv_control_allocator/lib/python3/dist-packages:/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_auv_control_allocator/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

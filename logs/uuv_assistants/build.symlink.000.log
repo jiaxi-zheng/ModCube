@@ -1,0 +1,13 @@
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/uuv_assistants/cmake/uuv_assistantsConfig.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/uuv_assistants/cmake/uuv_assistantsConfig-version.cmake
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/tf_quaternion/__init__.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/uuv_assistants.pc
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/unpause_simulation.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/publish_footprints.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/publish_vehicle_footprint.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/cmake.lock
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/publish_world_models.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/create_thruster_manager_configuration
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/uuv_message_to_tf
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/set_simulation_timer.py
+Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_assistants/create_new_robot_model

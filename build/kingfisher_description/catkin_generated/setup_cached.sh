@@ -9,5 +9,6 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/kingfisher_description:$CMAKE_PREFIX_PATH"
 export PWD='/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/kingfisher_description'
+export PYTHONPATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/kingfisher_description/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_config/kingfisher_description:$ROS_PACKAGE_PATH"

@@ -67,7 +67,7 @@ include CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTra
 include CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/progress.make
 
 CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py uuv_control_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitHelicalTrajectory.srv geometry_msgs/Point:std_msgs/Time
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py uuv_control_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/srv/InitHelicalTrajectory.srv std_msgs/Time:geometry_msgs/Point
 
 _uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory: CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory
 _uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory: CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_InitHelicalTrajectory.dir/build.make

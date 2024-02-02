@@ -67,7 +67,7 @@ include CMakeFiles/_tauv_msgs_generate_messages_check_deps_TeledyneDvlData.dir/c
 include CMakeFiles/_tauv_msgs_generate_messages_check_deps_TeledyneDvlData.dir/progress.make
 
 CMakeFiles/_tauv_msgs_generate_messages_check_deps_TeledyneDvlData:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tauv_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TeledyneDvlData.msg std_msgs/String:std_msgs/Header:geometry_msgs/Vector3
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tauv_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TeledyneDvlData.msg geometry_msgs/Vector3:std_msgs/Header:std_msgs/String
 
 _tauv_msgs_generate_messages_check_deps_TeledyneDvlData: CMakeFiles/_tauv_msgs_generate_messages_check_deps_TeledyneDvlData
 _tauv_msgs_generate_messages_check_deps_TeledyneDvlData: CMakeFiles/_tauv_msgs_generate_messages_check_deps_TeledyneDvlData.dir/build.make

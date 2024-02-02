@@ -67,7 +67,7 @@ include CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/c
 include CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/progress.make
 
 CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py uuv_control_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg geometry_msgs/Point:std_msgs/Header
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py uuv_control_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_control/uuv_control_msgs/msg/Waypoint.msg std_msgs/Header:geometry_msgs/Point
 
 _uuv_control_msgs_generate_messages_check_deps_Waypoint: CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint
 _uuv_control_msgs_generate_messages_check_deps_Waypoint: CMakeFiles/_uuv_control_msgs_generate_messages_check_deps_Waypoint.dir/build.make

@@ -272,13 +272,14 @@ import struct
 import geometry_msgs.msg
 
 class GetTrajectoryResponse(genpy.Message):
-  _md5sum = "fc5a66f48a083a66680871845c362008"
+  _md5sum = "441dacfa79b4a746f7f7e5eb72b39605"
   _type = "tauv_msgs/GetTrajectoryResponse"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """
 geometry_msgs/Pose[] poses  # list of poses on trajectory
 geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)
 bool success  # false indicates some sort of failure
+bool auto_twists
 string message
 
 ================================================================================
@@ -321,8 +322,8 @@ MSG: geometry_msgs/Vector3
 float64 x
 float64 y
 float64 z"""
-  __slots__ = ['poses','twists','success','message']
-  _slot_types = ['geometry_msgs/Pose[]','geometry_msgs/Twist[]','bool','string']
+  __slots__ = ['poses','twists','success','auto_twists','message']
+  _slot_types = ['geometry_msgs/Pose[]','geometry_msgs/Twist[]','bool','bool','string']
 
   def __init__(self, *args, **kwds):
     """
@@ -332,7 +333,7 @@ float64 z"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       poses,twists,success,message
+       poses,twists,success,auto_twists,message
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -347,12 +348,15 @@ float64 z"""
         self.twists = []
       if self.success is None:
         self.success = False
+      if self.auto_twists is None:
+        self.auto_twists = False
       if self.message is None:
         self.message = ''
     else:
       self.poses = []
       self.twists = []
       self.success = False
+      self.auto_twists = False
       self.message = ''
 
   def _get_types(self):
@@ -385,8 +389,8 @@ float64 z"""
         _v4 = val1.angular
         _x = _v4
         buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-      _x = self.success
-      buff.write(_get_struct_B().pack(_x))
+      _x = self
+      buff.write(_get_struct_2B().pack(_x.success, _x.auto_twists))
       _x = self.message
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -443,10 +447,12 @@ float64 z"""
         end += 24
         (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
         self.twists.append(val1)
+      _x = self
       start = end
-      end += 1
-      (self.success,) = _get_struct_B().unpack(str[start:end])
+      end += 2
+      (_x.success, _x.auto_twists,) = _get_struct_2B().unpack(str[start:end])
       self.success = bool(self.success)
+      self.auto_twists = bool(self.auto_twists)
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -486,8 +492,8 @@ float64 z"""
         _v12 = val1.angular
         _x = _v12
         buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-      _x = self.success
-      buff.write(_get_struct_B().pack(_x))
+      _x = self
+      buff.write(_get_struct_2B().pack(_x.success, _x.auto_twists))
       _x = self.message
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -545,10 +551,12 @@ float64 z"""
         end += 24
         (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
         self.twists.append(val1)
+      _x = self
       start = end
-      end += 1
-      (self.success,) = _get_struct_B().unpack(str[start:end])
+      end += 2
+      (_x.success, _x.auto_twists,) = _get_struct_2B().unpack(str[start:end])
       self.success = bool(self.success)
+      self.auto_twists = bool(self.auto_twists)
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -566,6 +574,12 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
+_struct_2B = None
+def _get_struct_2B():
+    global _struct_2B
+    if _struct_2B is None:
+        _struct_2B = struct.Struct("<2B")
+    return _struct_2B
 _struct_3d = None
 def _get_struct_3d():
     global _struct_3d
@@ -578,14 +592,8 @@ def _get_struct_4d():
     if _struct_4d is None:
         _struct_4d = struct.Struct("<4d")
     return _struct_4d
-_struct_B = None
-def _get_struct_B():
-    global _struct_B
-    if _struct_B is None:
-        _struct_B = struct.Struct("<B")
-    return _struct_B
 class GetTrajectory(object):
   _type          = 'tauv_msgs/GetTrajectory'
-  _md5sum = 'a821c3e69b37025c156850881154fe33'
+  _md5sum = '44146c6b1e5214a56fdd6c14fe6382be'
   _request_class  = GetTrajectoryRequest
   _response_class = GetTrajectoryResponse

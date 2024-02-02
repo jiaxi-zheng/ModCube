@@ -8,7 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_tutorial_seabed_world:$CMAKE_PREFIX_PATH"
-export PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin:$PATH"
 export PWD='/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_tutorial_seabed_world'
 export PYTHONPATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_tutorial_seabed_world/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

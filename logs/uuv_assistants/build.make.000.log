@@ -1,0 +1,3 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/uuv_message_to_tf.dir/src/message_to_tf.cc.o[0m
+[100%] [32m[1mLinking CXX executable /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_assistants/lib/uuv_assistants/uuv_message_to_tf[0m
+[100%] Built target uuv_message_to_tf

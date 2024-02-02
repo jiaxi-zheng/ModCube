@@ -181,8 +181,8 @@ CMakeFiles/download_extra_data.dir/clean:
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/all
 CMakeFiles/tests.dir/all: CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_gazebo_plugins/CMakeFiles --progress-num= "Built target tests"
@@ -472,10 +472,10 @@ CMakeFiles/umbilical_plugin.dir/clean:
 # Target rules for target CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir
 
 # All Build rule for target.
+CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/all: CMakeFiles/uuv_gazebo_plugins_msgs.dir/all
 CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/all: CMakeFiles/uuv_dynamics.dir/all
 CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/all: CMakeFiles/uuv_thruster_plugin.dir/all
-CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/build.make CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/build.make CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_gazebo_plugins/CMakeFiles --progress-num=1,2 "Built target UNIT_ThrusterConversionFcn_TEST"
@@ -553,8 +553,8 @@ CMakeFiles/_run_tests_uuv_gazebo_plugins.dir/clean:
 # Target rules for target CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir
 
 # All Build rule for target.
-CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir/all: CMakeFiles/run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/all
 CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir/all: CMakeFiles/run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/all
+CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir/all: CMakeFiles/run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir/build.make CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir/build.make CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_gazebo_plugins/CMakeFiles --progress-num= "Built target run_tests_uuv_gazebo_plugins_gtest"
@@ -580,8 +580,8 @@ CMakeFiles/run_tests_uuv_gazebo_plugins_gtest.dir/clean:
 # Target rules for target CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest.dir
 
 # All Build rule for target.
-CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest.dir/all: CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/all
 CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest.dir/all: CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/all
+CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest.dir/all: CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest.dir/build.make CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest.dir/build.make CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_gazebo_plugins/CMakeFiles --progress-num= "Built target _run_tests_uuv_gazebo_plugins_gtest"
@@ -633,9 +633,9 @@ CMakeFiles/run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.di
 # Target rules for target CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir
 
 # All Build rule for target.
+CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/all: CMakeFiles/clean_test_results_uuv_gazebo_plugins.dir/all
 CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/all: CMakeFiles/tests.dir/all
 CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/all: CMakeFiles/UNIT_ThrusterConversionFcn_TEST.dir/all
-CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/all: CMakeFiles/clean_test_results_uuv_gazebo_plugins.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/build.make CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/build.make CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_gazebo_plugins/CMakeFiles --progress-num= "Built target _run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterConversionFcn_TEST"
@@ -687,8 +687,8 @@ CMakeFiles/clean_test_results_uuv_gazebo_plugins.dir/clean:
 # Target rules for target CMakeFiles/UNIT_ThrusterDynamics_TEST.dir
 
 # All Build rule for target.
-CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/all: CMakeFiles/uuv_dynamics.dir/all
 CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/all: CMakeFiles/uuv_dynamics.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/build.make CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/build.make CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_gazebo_plugins/CMakeFiles --progress-num=3,4 "Built target UNIT_ThrusterDynamics_TEST"
@@ -740,9 +740,9 @@ CMakeFiles/run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/cle
 # Target rules for target CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir
 
 # All Build rule for target.
-CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/all: CMakeFiles/tests.dir/all
 CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/all: CMakeFiles/clean_test_results_uuv_gazebo_plugins.dir/all
 CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/all: CMakeFiles/UNIT_ThrusterDynamics_TEST.dir/all
+CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/build.make CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/build.make CMakeFiles/_run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/uuv_gazebo_plugins/CMakeFiles --progress-num= "Built target _run_tests_uuv_gazebo_plugins_gtest_UNIT_ThrusterDynamics_TEST"

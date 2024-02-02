@@ -28,7 +28,11 @@ class OptimalSpline:
         # evaluate the spline at that point:
         # return sum([coeffs[(self.order - i)] * T ** i for i in range(0, self.order + 1)])
         res = 0
+
         for i in range(r, self.order + 1):
+            # print("self.order - i : ", self.order - i)
+            # if coeffs[(self.order - i)] is None:
+            #     raise ValueError(f"Coefficient for order {self.order - i} is None")
             res += coeffs[(self.order - i)] * factorial(i) / factorial(i - r) * T**(i-r)
         return res
 

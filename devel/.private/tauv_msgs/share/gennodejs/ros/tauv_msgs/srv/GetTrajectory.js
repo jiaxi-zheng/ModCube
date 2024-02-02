@@ -253,6 +253,7 @@ class GetTrajectoryResponse {
       this.poses = null;
       this.twists = null;
       this.success = null;
+      this.auto_twists = null;
       this.message = null;
     }
     else {
@@ -273,6 +274,12 @@ class GetTrajectoryResponse {
       }
       else {
         this.success = false;
+      }
+      if (initObj.hasOwnProperty('auto_twists')) {
+        this.auto_twists = initObj.auto_twists
+      }
+      else {
+        this.auto_twists = false;
       }
       if (initObj.hasOwnProperty('message')) {
         this.message = initObj.message
@@ -299,6 +306,8 @@ class GetTrajectoryResponse {
     });
     // Serialize message field [success]
     bufferOffset = _serializer.bool(obj.success, buffer, bufferOffset);
+    // Serialize message field [auto_twists]
+    bufferOffset = _serializer.bool(obj.auto_twists, buffer, bufferOffset);
     // Serialize message field [message]
     bufferOffset = _serializer.string(obj.message, buffer, bufferOffset);
     return bufferOffset;
@@ -324,6 +333,8 @@ class GetTrajectoryResponse {
     }
     // Deserialize message field [success]
     data.success = _deserializer.bool(buffer, bufferOffset);
+    // Deserialize message field [auto_twists]
+    data.auto_twists = _deserializer.bool(buffer, bufferOffset);
     // Deserialize message field [message]
     data.message = _deserializer.string(buffer, bufferOffset);
     return data;
@@ -334,7 +345,7 @@ class GetTrajectoryResponse {
     length += 56 * object.poses.length;
     length += 48 * object.twists.length;
     length += _getByteLength(object.message);
-    return length + 13;
+    return length + 14;
   }
 
   static datatype() {
@@ -344,7 +355,7 @@ class GetTrajectoryResponse {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'fc5a66f48a083a66680871845c362008';
+    return '441dacfa79b4a746f7f7e5eb72b39605';
   }
 
   static messageDefinition() {
@@ -354,6 +365,7 @@ class GetTrajectoryResponse {
     geometry_msgs/Pose[] poses  # list of poses on trajectory
     geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)
     bool success  # false indicates some sort of failure
+    bool auto_twists
     string message
     
     ================================================================================
@@ -432,6 +444,13 @@ class GetTrajectoryResponse {
       resolved.success = false
     }
 
+    if (msg.auto_twists !== undefined) {
+      resolved.auto_twists = msg.auto_twists;
+    }
+    else {
+      resolved.auto_twists = false
+    }
+
     if (msg.message !== undefined) {
       resolved.message = msg.message;
     }
@@ -446,6 +465,6 @@ class GetTrajectoryResponse {
 module.exports = {
   Request: GetTrajectoryRequest,
   Response: GetTrajectoryResponse,
-  md5sum() { return 'a821c3e69b37025c156850881154fe33'; },
+  md5sum() { return '44146c6b1e5214a56fdd6c14fe6382be'; },
   datatype() { return 'tauv_msgs/GetTrajectory'; }
 };

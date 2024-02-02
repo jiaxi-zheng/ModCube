@@ -1,0 +1,29 @@
+[  5%] [34m[1mRunning cpp protocol buffer compiler on /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/msgs/Double.proto[0m
+[libprotobuf WARNING google/protobuf/compiler/parser.cc:562] No syntax specified for the proto file: Double.proto. Please use 'syntax = "proto2";' or 'syntax = "proto3";' to specify a syntax version. (Defaulted to proto2 syntax.)
+[ 10%] [34m[1mRunning cpp protocol buffer compiler on /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/msgs/Accel.proto[0m
+[libprotobuf WARNING google/protobuf/compiler/parser.cc:562] No syntax specified for the proto file: Accel.proto. Please use 'syntax = "proto2";' or 'syntax = "proto3";' to specify a syntax version. (Defaulted to proto2 syntax.)
+[ 15%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_plugins_msgs.dir/Accel.pb.cc.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_plugins_msgs.dir/Double.pb.cc.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/uuv_dynamics.dir/src/Dynamics.cc.o[0m
+[ 25%] Built target _catkin_empty_exported_target
+[ 30%] [32mBuilding CXX object CMakeFiles/uuv_underwater_object_plugin.dir/src/BuoyantObject.cc.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/uuv_underwater_object_plugin.dir/src/HydrodynamicModel.cc.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/umbilical_plugin.dir/src/UmbilicalModel.cc.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/umbilical_plugin.dir/src/UmbilicalPlugin.cc.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_plugins/lib/libuuv_gazebo_plugins_msgs.so[0m
+[ 50%] Built target uuv_gazebo_plugins_msgs
+[ 55%] [32mBuilding CXX object CMakeFiles/uuv_underwater_object_plugin.dir/src/UnderwaterObjectPlugin.cc.o[0m
+[ 60%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_plugins/lib/libuuv_dynamics.so[0m
+[ 60%] Built target uuv_dynamics
+[ 65%] [32mBuilding CXX object CMakeFiles/uuv_fin_plugin.dir/src/LiftDragModel.cc.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/uuv_thruster_plugin.dir/src/ThrusterConversionFcn.cc.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/uuv_fin_plugin.dir/src/FinPlugin.cc.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/uuv_thruster_plugin.dir/src/ThrusterPlugin.cc.o[0m
+[ 85%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_plugins/lib/libumbilical_plugin.so[0m
+[ 85%] Built target umbilical_plugin
+[ 90%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_plugins/lib/libuuv_underwater_object_plugin.so[0m
+[ 90%] Built target uuv_underwater_object_plugin
+[ 95%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_plugins/lib/libuuv_thruster_plugin.so[0m
+[ 95%] Built target uuv_thruster_plugin
+[100%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_plugins/lib/libuuv_fin_plugin.so[0m
+[100%] Built target uuv_fin_plugin

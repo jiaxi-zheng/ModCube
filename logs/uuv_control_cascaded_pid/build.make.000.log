@@ -1,0 +1,10 @@
+[ 33%] [34m[1mGenerating dynamic reconfigure files from cfg/AccelerationControl.cfg: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/include/uuv_control_cascaded_pid/AccelerationControlConfig.h /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/lib/python3/dist-packages/uuv_control_cascaded_pid/cfg/AccelerationControlConfig.py[0m
+[ 66%] [34m[1mGenerating dynamic reconfigure files from cfg/PositionControl.cfg: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/include/uuv_control_cascaded_pid/PositionControlConfig.h /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/lib/python3/dist-packages/uuv_control_cascaded_pid/cfg/PositionControlConfig.py[0m
+Generating reconfiguration files for AccelerationControl in uuv_control
+Generating reconfiguration files for PositionControl in uuv_control
+Wrote header file in /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/include/uuv_control_cascaded_pid/PositionControlConfig.h
+Wrote header file in /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/include/uuv_control_cascaded_pid/AccelerationControlConfig.h
+[100%] [34m[1mGenerating dynamic reconfigure files from cfg/VelocityControl.cfg: /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/include/uuv_control_cascaded_pid/VelocityControlConfig.h /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/lib/python3/dist-packages/uuv_control_cascaded_pid/cfg/VelocityControlConfig.py[0m
+Generating reconfiguration files for VelocityControl in uuv_control
+Wrote header file in /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_cascaded_pid/include/uuv_control_cascaded_pid/VelocityControlConfig.h
+[100%] Built target uuv_control_cascaded_pid_gencfg

@@ -1,0 +1,13 @@
+{
+    "cmake.sourceDirectory": "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/catkin_tools_prebuild",
+    "python.autoComplete.extraPaths": [
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/usr/local/lib/python2.7/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/usr/local/lib/python2.7/site-packages"
+    ]
+}

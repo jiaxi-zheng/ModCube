@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_common/include/**",
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_sim_gazebo_plugins/include/**",
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_plugins/include/**",
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/include/**",
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/include/**",
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_world_plugins/uuv_world_plugins/include/**",
+        "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

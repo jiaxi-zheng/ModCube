@@ -11,6 +11,7 @@ Panels:
         - /Odometry1
         - /Odometry1/Shape1
         - /MarkerArray2
+        - /Path1
       Splitter Ratio: 0.7589040994644165
     Tree Height: 1522
   - Class: rviz/Selection
@@ -177,6 +178,30 @@ Visualization Manager:
         {}
       Queue Size: 100
       Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.10000000149011612
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: Axes
+      Queue Size: 10
+      Radius: 0.004999999888241291
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /kf/gnc/path
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -205,7 +230,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.367262601852417
+      Distance: 5.850275993347168
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -213,15 +238,15 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 2.7693533897399902
-        Y: 0.8298519253730774
-        Z: 1.8346784114837646
+        X: 2.822409152984619
+        Y: 0.7898369431495667
+        Z: 2.011749029159546
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.36479637026786804
+      Pitch: 0.33979636430740356
       Target Frame: <Fixed Frame>
       Yaw: 2.4954047203063965
     Saved: ~

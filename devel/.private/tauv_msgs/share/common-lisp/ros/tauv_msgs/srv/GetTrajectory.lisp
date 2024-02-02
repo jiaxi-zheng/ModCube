@@ -140,10 +140,10 @@
   "tauv_msgs/GetTrajectoryRequest")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<GetTrajectory-request>)))
   "Returns md5sum for a message object of type '<GetTrajectory-request>"
-  "a821c3e69b37025c156850881154fe33")
+  "44146c6b1e5214a56fdd6c14fe6382be")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'GetTrajectory-request)))
   "Returns md5sum for a message object of type 'GetTrajectory-request"
-  "a821c3e69b37025c156850881154fe33")
+  "44146c6b1e5214a56fdd6c14fe6382be")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<GetTrajectory-request>)))
   "Returns full string definition for message of type '<GetTrajectory-request>"
   (cl:format cl:nil "# Note: Angular velocities outside of yaw (z axis) are currently unused.~%~%std_msgs/Header header~%geometry_msgs/Pose curr_pose  # Current positions~%geometry_msgs/Twist curr_twist  # Current velocities (in world frame! Not body velocities!)~%time curr_time~%int32 len  # Number of samples to look ahead on the trajectory. (First sample corresponds to current time, second is time + dt, etc)~%float32 dt  # time difference between samples~%~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Pose~%# A representation of pose in free space, composed of position and orientation. ~%Point position~%Quaternion orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Quaternion~%# This represents an orientation in free space in quaternion form.~%~%float64 x~%float64 y~%float64 z~%float64 w~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
@@ -187,6 +187,11 @@
     :initarg :success
     :type cl:boolean
     :initform cl:nil)
+   (auto_twists
+    :reader auto_twists
+    :initarg :auto_twists
+    :type cl:boolean
+    :initform cl:nil)
    (message
     :reader message
     :initarg :message
@@ -217,6 +222,11 @@
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader tauv_msgs-srv:success-val is deprecated.  Use tauv_msgs-srv:success instead.")
   (success m))
 
+(cl:ensure-generic-function 'auto_twists-val :lambda-list '(m))
+(cl:defmethod auto_twists-val ((m <GetTrajectory-response>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader tauv_msgs-srv:auto_twists-val is deprecated.  Use tauv_msgs-srv:auto_twists instead.")
+  (auto_twists m))
+
 (cl:ensure-generic-function 'message-val :lambda-list '(m))
 (cl:defmethod message-val ((m <GetTrajectory-response>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader tauv_msgs-srv:message-val is deprecated.  Use tauv_msgs-srv:message instead.")
@@ -238,6 +248,7 @@
   (cl:map cl:nil #'(cl:lambda (ele) (roslisp-msg-protocol:serialize ele ostream))
    (cl:slot-value msg 'twists))
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'success) 1 0)) ostream)
+  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'auto_twists) 1 0)) ostream)
   (cl:let ((__ros_str_len (cl:length (cl:slot-value msg 'message))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
@@ -268,6 +279,7 @@
     (cl:setf (cl:aref vals i) (cl:make-instance 'geometry_msgs-msg:Twist))
   (roslisp-msg-protocol:deserialize (cl:aref vals i) istream))))
     (cl:setf (cl:slot-value msg 'success) (cl:not (cl:zerop (cl:read-byte istream))))
+    (cl:setf (cl:slot-value msg 'auto_twists) (cl:not (cl:zerop (cl:read-byte istream))))
     (cl:let ((__ros_str_len 0))
       (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
@@ -286,20 +298,21 @@
   "tauv_msgs/GetTrajectoryResponse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<GetTrajectory-response>)))
   "Returns md5sum for a message object of type '<GetTrajectory-response>"
-  "a821c3e69b37025c156850881154fe33")
+  "44146c6b1e5214a56fdd6c14fe6382be")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'GetTrajectory-response)))
   "Returns md5sum for a message object of type 'GetTrajectory-response"
-  "a821c3e69b37025c156850881154fe33")
+  "44146c6b1e5214a56fdd6c14fe6382be")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<GetTrajectory-response>)))
   "Returns full string definition for message of type '<GetTrajectory-response>"
-  (cl:format cl:nil "~%geometry_msgs/Pose[] poses  # list of poses on trajectory~%geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)~%bool success  # false indicates some sort of failure~%string message~%~%================================================================================~%MSG: geometry_msgs/Pose~%# A representation of pose in free space, composed of position and orientation. ~%Point position~%Quaternion orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Quaternion~%# This represents an orientation in free space in quaternion form.~%~%float64 x~%float64 y~%float64 z~%float64 w~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "~%geometry_msgs/Pose[] poses  # list of poses on trajectory~%geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)~%bool success  # false indicates some sort of failure~%bool auto_twists~%string message~%~%================================================================================~%MSG: geometry_msgs/Pose~%# A representation of pose in free space, composed of position and orientation. ~%Point position~%Quaternion orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Quaternion~%# This represents an orientation in free space in quaternion form.~%~%float64 x~%float64 y~%float64 z~%float64 w~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'GetTrajectory-response)))
   "Returns full string definition for message of type 'GetTrajectory-response"
-  (cl:format cl:nil "~%geometry_msgs/Pose[] poses  # list of poses on trajectory~%geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)~%bool success  # false indicates some sort of failure~%string message~%~%================================================================================~%MSG: geometry_msgs/Pose~%# A representation of pose in free space, composed of position and orientation. ~%Point position~%Quaternion orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Quaternion~%# This represents an orientation in free space in quaternion form.~%~%float64 x~%float64 y~%float64 z~%float64 w~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "~%geometry_msgs/Pose[] poses  # list of poses on trajectory~%geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)~%bool success  # false indicates some sort of failure~%bool auto_twists~%string message~%~%================================================================================~%MSG: geometry_msgs/Pose~%# A representation of pose in free space, composed of position and orientation. ~%Point position~%Quaternion orientation~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Quaternion~%# This represents an orientation in free space in quaternion form.~%~%float64 x~%float64 y~%float64 z~%float64 w~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <GetTrajectory-response>))
   (cl:+ 0
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'poses) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ (roslisp-msg-protocol:serialization-length ele))))
      4 (cl:reduce #'cl:+ (cl:slot-value msg 'twists) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ (roslisp-msg-protocol:serialization-length ele))))
+     1
      1
      4 (cl:length (cl:slot-value msg 'message))
 ))
@@ -309,6 +322,7 @@
     (cl:cons ':poses (poses msg))
     (cl:cons ':twists (twists msg))
     (cl:cons ':success (success msg))
+    (cl:cons ':auto_twists (auto_twists msg))
     (cl:cons ':message (message msg))
 ))
 (cl:defmethod roslisp-msg-protocol:service-request-type ((msg (cl:eql 'GetTrajectory)))

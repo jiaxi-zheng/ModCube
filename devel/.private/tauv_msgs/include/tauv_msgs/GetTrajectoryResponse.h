@@ -29,12 +29,14 @@ struct GetTrajectoryResponse_
     : poses()
     , twists()
     , success(false)
+    , auto_twists(false)
     , message()  {
     }
   GetTrajectoryResponse_(const ContainerAllocator& _alloc)
     : poses(_alloc)
     , twists(_alloc)
     , success(false)
+    , auto_twists(false)
     , message(_alloc)  {
   (void)_alloc;
     }
@@ -49,6 +51,9 @@ struct GetTrajectoryResponse_
 
    typedef uint8_t _success_type;
   _success_type success;
+
+   typedef uint8_t _auto_twists_type;
+  _auto_twists_type auto_twists;
 
    typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _message_type;
   _message_type message;
@@ -85,6 +90,7 @@ bool operator==(const ::tauv_msgs::GetTrajectoryResponse_<ContainerAllocator1> &
   return lhs.poses == rhs.poses &&
     lhs.twists == rhs.twists &&
     lhs.success == rhs.success &&
+    lhs.auto_twists == rhs.auto_twists &&
     lhs.message == rhs.message;
 }
 
@@ -142,12 +148,12 @@ struct MD5Sum< ::tauv_msgs::GetTrajectoryResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "fc5a66f48a083a66680871845c362008";
+    return "441dacfa79b4a746f7f7e5eb72b39605";
   }
 
   static const char* value(const ::tauv_msgs::GetTrajectoryResponse_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xfc5a66f48a083a66ULL;
-  static const uint64_t static_value2 = 0x680871845c362008ULL;
+  static const uint64_t static_value1 = 0x441dacfa79b4a746ULL;
+  static const uint64_t static_value2 = 0xf7f7e5eb72b39605ULL;
 };
 
 template<class ContainerAllocator>
@@ -170,6 +176,7 @@ struct Definition< ::tauv_msgs::GetTrajectoryResponse_<ContainerAllocator> >
 "geometry_msgs/Pose[] poses  # list of poses on trajectory\n"
 "geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)\n"
 "bool success  # false indicates some sort of failure\n"
+"bool auto_twists\n"
 "string message\n"
 "\n"
 "================================================================================\n"
@@ -233,6 +240,7 @@ namespace serialization
       stream.next(m.poses);
       stream.next(m.twists);
       stream.next(m.success);
+      stream.next(m.auto_twists);
       stream.next(m.message);
     }
 
@@ -270,6 +278,8 @@ struct Printer< ::tauv_msgs::GetTrajectoryResponse_<ContainerAllocator> >
     }
     s << indent << "success: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.success);
+    s << indent << "auto_twists: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.auto_twists);
     s << indent << "message: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.message);
   }

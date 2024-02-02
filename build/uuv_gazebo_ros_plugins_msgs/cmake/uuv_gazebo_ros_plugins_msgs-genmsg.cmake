@@ -24,7 +24,7 @@ add_custom_target(_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_${_f
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg" NAME_WE)
 add_custom_target(_uuv_gazebo_ros_plugins_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "uuv_gazebo_ros_plugins_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg" "geometry_msgs/Inertia:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "uuv_gazebo_ros_plugins_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg" "geometry_msgs/Vector3:geometry_msgs/Inertia"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/ThrusterConversionFcn.msg" NAME_WE)
@@ -97,7 +97,7 @@ _generate_msg_cpp(uuv_gazebo_ros_plugins_msgs
 _generate_msg_cpp(uuv_gazebo_ros_plugins_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/uuv_gazebo_ros_plugins_msgs
 )
 _generate_msg_cpp(uuv_gazebo_ros_plugins_msgs
@@ -226,7 +226,7 @@ _generate_msg_eus(uuv_gazebo_ros_plugins_msgs
 _generate_msg_eus(uuv_gazebo_ros_plugins_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/uuv_gazebo_ros_plugins_msgs
 )
 _generate_msg_eus(uuv_gazebo_ros_plugins_msgs
@@ -355,7 +355,7 @@ _generate_msg_lisp(uuv_gazebo_ros_plugins_msgs
 _generate_msg_lisp(uuv_gazebo_ros_plugins_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/uuv_gazebo_ros_plugins_msgs
 )
 _generate_msg_lisp(uuv_gazebo_ros_plugins_msgs
@@ -484,7 +484,7 @@ _generate_msg_nodejs(uuv_gazebo_ros_plugins_msgs
 _generate_msg_nodejs(uuv_gazebo_ros_plugins_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/uuv_gazebo_ros_plugins_msgs
 )
 _generate_msg_nodejs(uuv_gazebo_ros_plugins_msgs
@@ -613,7 +613,7 @@ _generate_msg_py(uuv_gazebo_ros_plugins_msgs
 _generate_msg_py(uuv_gazebo_ros_plugins_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Inertia.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/uuv_gazebo_ros_plugins_msgs
 )
 _generate_msg_py(uuv_gazebo_ros_plugins_msgs

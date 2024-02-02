@@ -1,0 +1,207 @@
+[  1%] [34m[1mRunning cpp protocol buffer compiler on /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/msgs/SensorImu.proto[0m
+[  3%] [34m[1mRunning cpp protocol buffer compiler on /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/msgs/SensorMagnetic.proto[0m
+[  7%] [34m[1mRunning cpp protocol buffer compiler on /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/msgs/SensorDvl.proto[0m
+[  7%] [34m[1mRunning cpp protocol buffer compiler on /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/msgs/SensorRpt.proto[0m
+[  7%] Built target uuv_sensor_ros_plugins_msgs_generate_messages_py
+[  7%] Built target sensor_msgs_generate_messages_cpp
+[  7%] Built target geometry_msgs_generate_messages_cpp
+[  7%] Built target sensor_msgs_generate_messages_nodejs
+[  9%] Built target sensor_msgs_generate_messages_eus
+[  9%] [34m[1mRunning cpp protocol buffer compiler on /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/msgs/SensorPressure.proto[0m
+[  9%] Built target sensor_msgs_generate_messages_py
+[  9%] Built target geometry_msgs_generate_messages_eus
+[  9%] Built target geometry_msgs_generate_messages_lisp
+[  9%] Built target sensor_msgs_generate_messages_lisp
+[  9%] Built target geometry_msgs_generate_messages_nodejs
+[  9%] Built target geometry_msgs_generate_messages_py
+[  9%] Built target std_msgs_generate_messages_cpp
+[  9%] Built target std_msgs_generate_messages_eus
+[  9%] Built target std_msgs_generate_messages_nodejs
+[  9%] Built target std_msgs_generate_messages_lisp
+[  9%] Built target std_msgs_generate_messages_py
+[ 11%] [32mBuilding CXX object CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorImu.pb.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorDvl.pb.cc.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorRpt.pb.cc.o[0m
+[ 16%] Built target roscpp_generate_messages_cpp
+[ 16%] [32mBuilding CXX object CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorMagnetic.pb.cc.o[0m
+[ 16%] Built target roscpp_generate_messages_lisp
+[ 18%] [32mBuilding CXX object CMakeFiles/uuv_sensor_gazebo_msgs.dir/SensorPressure.pb.cc.o[0m
+[ 18%] Built target roscpp_generate_messages_nodejs
+[ 18%] Built target roscpp_generate_messages_eus
+[ 18%] Built target rosgraph_msgs_generate_messages_cpp
+[ 18%] Built target roscpp_generate_messages_py
+[ 18%] Built target rosgraph_msgs_generate_messages_eus
+[ 18%] Built target rosgraph_msgs_generate_messages_lisp
+[ 18%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 18%] Built target rosgraph_msgs_generate_messages_py
+[ 18%] Built target tf_generate_messages_cpp
+[ 18%] Built target tf_generate_messages_eus
+[ 18%] Built target tf_generate_messages_lisp
+[ 18%] Built target tf_generate_messages_py
+[ 18%] Built target actionlib_generate_messages_cpp
+[ 18%] Built target tf_generate_messages_nodejs
+[ 18%] Built target actionlib_generate_messages_eus
+[ 18%] Built target actionlib_generate_messages_lisp
+[ 18%] Built target actionlib_generate_messages_nodejs
+[ 18%] Built target actionlib_generate_messages_py
+[ 18%] Built target actionlib_msgs_generate_messages_cpp
+[ 18%] Built target actionlib_msgs_generate_messages_eus
+[ 18%] Built target actionlib_msgs_generate_messages_nodejs
+[ 18%] Built target tf2_msgs_generate_messages_cpp
+[ 18%] Built target tf2_msgs_generate_messages_eus
+[ 18%] Built target actionlib_msgs_generate_messages_py
+[ 18%] Built target tf2_msgs_generate_messages_nodejs
+[ 18%] Built target tf2_msgs_generate_messages_lisp
+[ 18%] Built target actionlib_msgs_generate_messages_lisp
+[ 18%] Built target gazebo_msgs_generate_messages_cpp
+[ 18%] Built target gazebo_plugins_gencfg
+[ 18%] Built target tf2_msgs_generate_messages_py
+[ 18%] Built target gazebo_msgs_generate_messages_py
+[ 18%] Built target trajectory_msgs_generate_messages_cpp
+[ 18%] Built target trajectory_msgs_generate_messages_eus
+[ 18%] Built target gazebo_msgs_generate_messages_nodejs
+[ 18%] Built target gazebo_msgs_generate_messages_lisp
+[ 18%] Built target gazebo_msgs_generate_messages_eus
+[ 18%] Built target trajectory_msgs_generate_messages_lisp
+[ 18%] Built target trajectory_msgs_generate_messages_py
+[ 18%] Built target std_srvs_generate_messages_eus
+[ 18%] Built target std_srvs_generate_messages_nodejs
+[ 18%] Built target std_srvs_generate_messages_cpp
+[ 18%] Built target std_srvs_generate_messages_lisp
+[ 18%] Built target std_srvs_generate_messages_py
+[ 18%] Built target nodelet_generate_messages_cpp
+[ 18%] Built target nodelet_generate_messages_eus
+[ 18%] Built target bond_generate_messages_cpp
+[ 18%] Built target nodelet_generate_messages_nodejs
+[ 18%] Built target bond_generate_messages_eus
+[ 18%] Built target trajectory_msgs_generate_messages_nodejs
+[ 18%] Built target bond_generate_messages_lisp
+[ 18%] Built target bond_generate_messages_nodejs
+[ 18%] Built target nodelet_generate_messages_lisp
+[ 18%] Built target bond_generate_messages_py
+[ 18%] Built target nav_msgs_generate_messages_cpp
+[ 18%] Built target nodelet_generate_messages_py
+[ 18%] Built target nav_msgs_generate_messages_eus
+[ 18%] Built target nav_msgs_generate_messages_lisp
+[ 18%] Built target nav_msgs_generate_messages_nodejs
+[ 18%] Built target nav_msgs_generate_messages_py
+[ 18%] Built target dynamic_reconfigure_generate_messages_lisp
+[ 18%] Built target dynamic_reconfigure_generate_messages_cpp
+[ 18%] Built target dynamic_reconfigure_generate_messages_nodejs
+[ 18%] Built target dynamic_reconfigure_generate_messages_eus
+[ 18%] Built target dynamic_reconfigure_generate_messages_py
+[ 18%] Built target dynamic_reconfigure_gencfg
+[ 18%] Built target visualization_msgs_generate_messages_lisp
+[ 18%] Built target visualization_msgs_generate_messages_cpp
+[ 18%] Built target visualization_msgs_generate_messages_eus
+[ 18%] Built target visualization_msgs_generate_messages_nodejs
+[ 18%] Built target uuv_sensor_ros_plugins_msgs_generate_messages_cpp
+[ 18%] Built target uuv_sensor_ros_plugins_msgs_generate_messages_eus
+[ 18%] Built target visualization_msgs_generate_messages_py
+[ 18%] Built target uuv_sensor_ros_plugins_msgs_generate_messages_nodejs
+[ 18%] Built target uuv_sensor_ros_plugins_msgs_generate_messages_lisp
+[ 18%] Built target uuv_sensor_ros_plugins_xacro_generated_to_devel_space_
+[ 22%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_camera_plugin.dir/src/UnderwaterCameraROSPlugin.cc.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_base_sensor_plugin.dir/src/ROSBaseSensorPlugin.cc.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/CPCROSPlugin.cc.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/image_sonar_ros_plugin.dir/src/gazebo_ros_image_sonar.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/GPSROSPlugin.cc.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_base_model_plugin.dir/src/ROSBaseModelPlugin.cc.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/PoseGTROSPlugin.cc.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_pose_gt_plugin.dir/src/ROSBaseModelPlugin.cc.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_cpc_plugin.dir/src/ROSBaseModelPlugin.cc.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_gps_plugin.dir/src/ROSBaseSensorPlugin.cc.o[0m
+[ 49%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_sensor_gazebo_msgs.so[0m
+[ 49%] Built target uuv_sensor_gazebo_msgs
+[ 50%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/SubseaPressureROSPlugin.cc.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_subsea_pressure_plugin.dir/src/ROSBaseModelPlugin.cc.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/DVLROSPlugin.cc.o[0m
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 58%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_dvl_plugin.dir/src/ROSBaseModelPlugin.cc.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/MagnetometerROSPlugin.cc.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 66%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_magnetometer_plugin.dir/src/ROSBaseModelPlugin.cc.o[0m
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 67%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/IMUROSPlugin.cc.o[0m
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 69%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_imu_plugin.dir/src/ROSBaseModelPlugin.cc.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/RPTROSPlugin.cc.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBasePlugin.cc.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_ros_rpt_plugin.dir/src/ROSBaseModelPlugin.cc.o[0m
+[ 79%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_cpc_plugin.so[0m
+[ 79%] Built target uuv_gazebo_ros_cpc_plugin
+[ 81%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_base_sensor_plugin.so[0m
+[ 83%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_base_model_plugin.so[0m
+[ 84%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_gps_plugin.so[0m
+[ 84%] Built target uuv_gazebo_ros_base_model_plugin
+[ 84%] Built target uuv_gazebo_ros_gps_plugin
+[ 84%] Built target uuv_gazebo_ros_base_sensor_plugin
+[ 86%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_pose_gt_plugin.so[0m
+[ 86%] Built target uuv_gazebo_ros_pose_gt_plugin
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 88%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libimage_sonar_ros_plugin.so[0m
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 88%] Built target image_sonar_ros_plugin
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/MagnetometerROSPlugin.cc:[m[K In member function ‘[01m[Kvirtual bool gazebo::MagnetometerROSPlugin::OnUpdate(const gazebo::common::UpdateInfo&)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/MagnetometerROSPlugin.cc:152:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  152 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 90%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_camera_plugin.so[0m
+[ 90%] Built target uuv_gazebo_ros_camera_plugin
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/RPTROSPlugin.cc:[m[K In member function ‘[01m[Kvirtual bool gazebo::RPTROSPlugin::OnUpdate(const gazebo::common::UpdateInfo&)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/RPTROSPlugin.cc:119:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  119 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 92%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_subsea_pressure_plugin.so[0m
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:[m[K In member function ‘[01m[Kbool gazebo::ROSBasePlugin::InitBasePlugin(sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins/src/ROSBasePlugin.cc:144:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 94%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_imu_plugin.so[0m
+[ 96%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_dvl_plugin.so[0m
+[ 96%] Built target uuv_gazebo_ros_subsea_pressure_plugin
+[ 96%] Built target uuv_gazebo_ros_imu_plugin
+[ 96%] Built target uuv_gazebo_ros_dvl_plugin
+[ 98%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_rpt_plugin.so[0m
+[ 98%] Built target uuv_gazebo_ros_rpt_plugin
+[100%] [32m[1mLinking CXX shared library /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_sensor_ros_plugins/lib/libuuv_gazebo_ros_magnetometer_plugin.so[0m
+[100%] Built target uuv_gazebo_ros_magnetometer_plugin

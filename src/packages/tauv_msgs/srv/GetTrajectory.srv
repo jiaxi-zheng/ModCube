@@ -12,4 +12,5 @@ float32 dt  # time difference between samples
 geometry_msgs/Pose[] poses  # list of poses on trajectory
 geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)
 bool success  # false indicates some sort of failure
+bool auto_twists
 string message

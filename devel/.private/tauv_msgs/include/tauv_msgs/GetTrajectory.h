@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::tauv_msgs::GetTrajectory > {
   static const char* value()
   {
-    return "a821c3e69b37025c156850881154fe33";
+    return "44146c6b1e5214a56fdd6c14fe6382be";
   }
 
   static const char* value(const ::tauv_msgs::GetTrajectory&) { return value(); }

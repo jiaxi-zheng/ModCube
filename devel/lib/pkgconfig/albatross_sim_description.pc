@@ -1,1 +1,0 @@
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/albatross_sim_description/lib/pkgconfig/albatross_sim_description.pc

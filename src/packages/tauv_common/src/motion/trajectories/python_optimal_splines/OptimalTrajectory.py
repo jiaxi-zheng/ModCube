@@ -65,9 +65,6 @@ class OptimalTrajectory:
             wp.set_time(ts[i])
 
         self.splines = self._gen_splines()
-        
-        print("self.splines : ")
-        print(self.splines)
 
         self.solved = True
 
@@ -97,7 +94,7 @@ class OptimalTrajectory:
 
         if dim is None:
             results = []
-            for s in self.splines:
+            for s in self.splines:                
                 result = s.val(order, t)
                 if result is None:
                     print("One of the spline evaluations returned None")

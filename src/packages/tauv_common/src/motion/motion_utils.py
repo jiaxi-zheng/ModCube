@@ -83,7 +83,8 @@ class MotionUtils:
         if self.traj is None:
             return TrajectoryStatus.PENDING
 
-        return self.traj.get_status(self.pose)
+        # return self.traj.get_status(self.pose)
+        return self.traj.get_status()
 
     def arm(self, armed):
         try:
@@ -110,47 +111,20 @@ class MotionUtils:
             rospy.sleep(0.1)
         return True
 
-    # self._motion.goto(
-    #     pose,
-    #     # args.yaw,
-    #     v=v,
-    #     a=a,
-    #     j=j,
-    #     block=TrajectoryStatus.EXECUTING
-    # )
-
     def goto(self, pose_set: [Pose],
-                #    heading: float = None, 
                    v=.1, a=.1, j=.4,
-                #    threshold_lin=0.5, threshold_ang=0.5,
                    block: TrajectoryStatus = TrajectoryStatus.FINISHED):
         start_pose, start_twist = self.get_target()
 
-        # print("start_pose : ")
-        # print(start_pose)
-        # print("type(start_pose) : ")
-        # print(type(start_pose))
-        # print("start_twist : ")
-        # print(start_twist)
-
-        # print("[pos] : ")
-        # print([pos])
-        # print("v : ")
-        # print(v)
-        # print("**************************")
-
-        # poses_list = [pos1, pos2]
         try:
             # newtraj = LinearTrajectory(start_pose, start_twist, [pos], [heading], v=v, a=a, j=j)
-
             newtraj = NewMinSnapTrajectory(start_pose, start_twist, pose_set, v, v)
 
-            # def __init__(self, start_pose: Pose, start_twist: Twist, poses: [Pose], linear_velocity: float, angular_velocity: float):
-            print("NewMinSnapTrajectory set**************************")
         except PlanningError:
             rospy.logwarn("Trajectory planning failure!")
             return False
         self.set_trajectory(newtraj)
+
         while self.get_motion_status().value < block.value:
             rospy.sleep(0.1)
         return True

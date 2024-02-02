@@ -1,1 +1,0 @@
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/albatross_description/share/albatross_description/cmake/albatross_descriptionConfig-version.cmake

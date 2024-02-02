@@ -34,7 +34,6 @@ class MotionClient:
 
         self._debug_target_pose: rospy.Publisher = rospy.Publisher('gnc/debug_target_pose', PoseStampedMsg)
         self._debug_target_twist: rospy.Publisher = rospy.Publisher('gnc/debug_target_twist', TwistStampedMsg)
-        # self._path_pub = rospy.Publisher('gnc/path', Path, queue_size=10)
         self._path_pub = rospy.Publisher('gnc/marker_path', MarkerArray, queue_size=10)
 
         self._get_trajectory_server: rospy.Service = rospy.Service('gnc/get_trajectory', GetTrajectory, self._handle_get_trajectory)
@@ -80,7 +79,7 @@ class MotionClient:
                 marker.header.stamp = rospy.Time.now()
                 marker.ns = "trajectory"
                 marker.id = self.marker_id_last + i  # Ensure each marker has a unique ID
-                print("marker.id", marker.id)
+                # print("marker.id", marker.id)
                 marker.type = Marker.SPHERE  # Choose an appropriate marker type
                 marker.action = Marker.ADD
                 marker.lifetime=rospy.Duration(1000)
@@ -91,42 +90,24 @@ class MotionClient:
                 # marker.pose.orientation.y = pose.orientation.y
                 # marker.pose.orientation.z = pose.orientation.z
                 # marker.pose.orientation.w = pose.orientation.w
-                marker.scale.x = 0.1  # Adjust the size of the marker
+                marker.scale.x = 0.1  
                 marker.scale.y = 0.1
                 marker.scale.z = 0.1
-                marker.color.a = 1.0  # Don't forget to set the alpha!
+                marker.color.a = 1.0  
                 marker.color.r = 1.0
                 marker.color.g = 0.0
                 marker.color.b = 0.0
-
-                # Add the Marker to the MarkerArray
                 marker_array.markers.append(marker)
 
             self.marker_id_last = marker.id
             res.poses = poses
 
-            self._path_pub.publish(marker_array)  # Assuming self._path_pub is a rospy.Publisher for markers
-############################################################################
-            # path = Path()
-            # path.header.frame_id = f'{self._tf_namespace}/odom'
-            # path.header.stamp = rospy.Time.now()
-            # path.poses = []
-            # for pose_msg in poses:
-            #     pose_stamped = PoseStamped()
-            #     pose_stamped.header.frame_id = f'{self._tf_namespace}/odom'
-            #     pose_stamped.header.stamp = self._trajectory_start_time + rospy.Duration.from_sec(i * req.dt)
-            #     pose_stamped.pose = pose_msg
-            #     path.poses.append(pose_stamped)
-            # # print("path.poses : ", path.poses)
-            # # print("#########################")
-            # self._path_pub.publish(path)
+            self._path_pub.publish(marker_array)  
 
             res.twists = twists
             self._publish_debug_target(req.curr_time, res.poses[0], res.twists[0])
             res.success = True
             res.message = "success"
-
-
 
             return res
 

@@ -130,7 +130,7 @@
 
 (defclass tauv_msgs::GetTrajectoryResponse
   :super ros::object
-  :slots (_poses _twists _success _message ))
+  :slots (_poses _twists _success _auto_twists _message ))
 
 (defmethod tauv_msgs::GetTrajectoryResponse
   (:init
@@ -138,12 +138,14 @@
     ((:poses __poses) ())
     ((:twists __twists) ())
     ((:success __success) nil)
+    ((:auto_twists __auto_twists) nil)
     ((:message __message) "")
     )
    (send-super :init)
    (setq _poses __poses)
    (setq _twists __twists)
    (setq _success __success)
+   (setq _auto_twists __auto_twists)
    (setq _message (string __message))
    self)
   (:poses
@@ -163,6 +165,9 @@
   (:success
    (&optional (__success :null))
    (if (not (eq __success :null)) (setq _success __success)) _success)
+  (:auto_twists
+   (&optional (__auto_twists :null))
+   (if (not (eq __auto_twists :null)) (setq _auto_twists __auto_twists)) _auto_twists)
   (:message
    (&optional __message)
    (if __message (setq _message __message)) _message)
@@ -174,6 +179,8 @@
     ;; geometry_msgs/Twist[] _twists
     (apply #'+ (send-all _twists :serialization-length)) 4
     ;; bool _success
+    1
+    ;; bool _auto_twists
     1
     ;; string _message
     4 (length _message)
@@ -194,6 +201,8 @@
        )
      ;; bool _success
        (if _success (write-byte -1 s) (write-byte 0 s))
+     ;; bool _auto_twists
+       (if _auto_twists (write-byte -1 s) (write-byte 0 s))
      ;; string _message
        (write-long (length _message) s) (princ _message s)
      ;;
@@ -216,6 +225,8 @@
      ))
    ;; bool _success
      (setq _success (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
+   ;; bool _auto_twists
+     (setq _auto_twists (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
    ;; string _message
      (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _message (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;;
@@ -226,7 +237,7 @@
   :super ros::object
   :slots ())
 
-(setf (get tauv_msgs::GetTrajectory :md5sum-) "a821c3e69b37025c156850881154fe33")
+(setf (get tauv_msgs::GetTrajectory :md5sum-) "44146c6b1e5214a56fdd6c14fe6382be")
 (setf (get tauv_msgs::GetTrajectory :datatype-) "tauv_msgs/GetTrajectory")
 (setf (get tauv_msgs::GetTrajectory :request) tauv_msgs::GetTrajectoryRequest)
 (setf (get tauv_msgs::GetTrajectory :response) tauv_msgs::GetTrajectoryResponse)
@@ -234,7 +245,7 @@
 (defmethod tauv_msgs::GetTrajectoryRequest
   (:response () (instance tauv_msgs::GetTrajectoryResponse :init)))
 
-(setf (get tauv_msgs::GetTrajectoryRequest :md5sum-) "a821c3e69b37025c156850881154fe33")
+(setf (get tauv_msgs::GetTrajectoryRequest :md5sum-) "44146c6b1e5214a56fdd6c14fe6382be")
 (setf (get tauv_msgs::GetTrajectoryRequest :datatype-) "tauv_msgs/GetTrajectoryRequest")
 (setf (get tauv_msgs::GetTrajectoryRequest :definition-)
       "# Note: Angular velocities outside of yaw (z axis) are currently unused.
@@ -307,6 +318,7 @@ float64 y
 geometry_msgs/Pose[] poses  # list of poses on trajectory
 geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)
 bool success  # false indicates some sort of failure
+bool auto_twists
 string message
 
 ================================================================================
@@ -350,7 +362,7 @@ float64 x
 float64 y
 ")
 
-(setf (get tauv_msgs::GetTrajectoryResponse :md5sum-) "a821c3e69b37025c156850881154fe33")
+(setf (get tauv_msgs::GetTrajectoryResponse :md5sum-) "44146c6b1e5214a56fdd6c14fe6382be")
 (setf (get tauv_msgs::GetTrajectoryResponse :datatype-) "tauv_msgs/GetTrajectoryResponse")
 (setf (get tauv_msgs::GetTrajectoryResponse :definition-)
       "# Note: Angular velocities outside of yaw (z axis) are currently unused.
@@ -423,6 +435,7 @@ float64 y
 geometry_msgs/Pose[] poses  # list of poses on trajectory
 geometry_msgs/Twist[] twists  # list of twists on trajectory (in world frame! Not body velocities!)
 bool success  # false indicates some sort of failure
+bool auto_twists
 string message
 
 ================================================================================
@@ -468,6 +481,6 @@ float64 y
 
 
 
-(provide :tauv_msgs/GetTrajectory "a821c3e69b37025c156850881154fe33")
+(provide :tauv_msgs/GetTrajectory "44146c6b1e5214a56fdd6c14fe6382be")
 
 
