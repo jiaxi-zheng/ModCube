@@ -163,6 +163,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
     "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg"
     "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg"
+    "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg"
+    "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg"
     )
 endif()
 

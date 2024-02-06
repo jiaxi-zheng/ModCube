@@ -1,4 +1,19 @@
 <launch>
+    <arg name="config_pkg" />
+<!-- 
+    <include file="$(find tauv_vehicle)/launch/xsens_imu/xsens_imu.launch" />
+    <include file="$(find tauv_vehicle)/launch/xsens_imu_sync/xsens_imu_sync.launch" />
+    <include file="$(find tauv_vehicle)/launch/teledyne_dvl/teledyne_dvl.launch"/> -->
+    <include file="$(find tauv_vehicle)/launch/thrusters/thrusters.launch" />
+    <!-- <include file="$(find tauv_vehicle)/launch/arduino/arduino.launch" /> -->
+
+</launch>
+
+<!-- <launch>
+
+    <arg name="config_pkg" />
+    <include file="$(find tauv_vehicle)/launch/thrusters/thrusters.launch" />
+
     <arg name="show_front_disparity" default="false" />
     <arg name="show_front_color" default="false" />
     <arg name="show_bottom_disparity" default="false" />
@@ -96,4 +111,4 @@
             <remap from="image" to="/kf/vehicle/oakd_bottom/color/image_raw"/>
         </node>
     </group>
-</launch>
+</launch> -->

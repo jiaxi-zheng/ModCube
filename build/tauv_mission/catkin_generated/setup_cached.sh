@@ -9,6 +9,8 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_mission:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_mission/lib:$LD_LIBRARY_PATH"
+export PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_mission/bin:$PATH"
+export PKG_CONFIG_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_mission/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_mission'
 export PYTHONPATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_mission/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_mission/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

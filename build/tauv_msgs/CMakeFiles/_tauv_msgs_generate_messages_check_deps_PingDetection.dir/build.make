@@ -67,7 +67,7 @@ include CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/com
 include CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/progress.make
 
 CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tauv_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg std_msgs/Header:geometry_msgs/Vector3
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tauv_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg geometry_msgs/Vector3:std_msgs/Header
 
 _tauv_msgs_generate_messages_check_deps_PingDetection: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection
 _tauv_msgs_generate_messages_check_deps_PingDetection: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/build.make

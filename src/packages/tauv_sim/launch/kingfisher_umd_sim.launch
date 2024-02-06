@@ -16,7 +16,7 @@
             <arg name="namespace" value="$(arg namespace)" />
         </include>
 
-        <!-- <include file="$(arg config_pkg)/launch/vehicle.launch"/> -->
+        <include file="$(arg config_pkg)/launch/vehicle.launch"/>
 
         <include file="$(arg config_pkg)/launch/system.launch">
             <arg name="config_pkg" value="$(arg config_pkg)"/>

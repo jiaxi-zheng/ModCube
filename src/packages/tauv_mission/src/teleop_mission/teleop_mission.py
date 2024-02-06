@@ -251,39 +251,46 @@ class TeleopMission:
         x1 = args.x
         y1 = args.y
         z1 = args.z
+
+        # x2 = args.x
+        # y2 = args.y
+        # z2 = args.z
+
         x2 = args.x + 1
         y2 = args.y + 1
         z2 = args.z + 1
+
         q11 = args.q1
         q12 = args.q2
         q13 = args.q3
         q14 = args.q4
+
+        q21 = q11
+        q22 = q12
+        q23 = -q13
+        q24 = q14
+
 
         pose1 = Pose()
         pose2 = Pose()
         pose1.position = Point(x1, y1, z1)
         pose1.orientation = Quaternion(q11, q12, q13, q14)
         pose2.position = Point(x2, y2, z2)
-        pose2.orientation = Quaternion(q11, q12, q13, q14)    
+        pose2.orientation = Quaternion(q21, q22, q23, q24)    
         poses_list = [pose1,pose2]
 
-        # try:
-        self._motion.goto(
-            poses_list,
-            # args.yaw,
-            v=v,
-            a=a,
-            j=j,
-            block=TrajectoryStatus.EXECUTING
-        )
-
-            # print("v : ")
-            # print(v)
-            # print("#########################")
-
-        # except Exception as e:
-        #     print("Exception from teleop_mission! (Gleb)")
-        #     print(e)
+        try:
+            self._motion.goto(
+                poses_list,
+                # args.yaw,
+                v=v,
+                a=a,
+                j=j,
+                block=TrajectoryStatus.EXECUTING
+            )
+        except Exception as e:
+            print("Exception from teleop_mission! (Gleb)")
+            print(e)
 
     def _handle_goto_relative(self, args):
         v = args.v if args.v is not None else .1

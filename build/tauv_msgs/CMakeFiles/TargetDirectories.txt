@@ -72,6 +72,8 @@
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDDebug.dir
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDPlannerDebug.dir
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir
+/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync.dir
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles/_tauv_msgs_generate_messages_check_deps_SonarControl.dir
 /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles/_tauv_msgs_generate_messages_check_deps_MapFind.dir

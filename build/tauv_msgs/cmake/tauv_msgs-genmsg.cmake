@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "tauv_msgs: 28 messages, 15 services")
+message(STATUS "tauv_msgs: 30 messages, 15 services")
 
 set(MSG_I_FLAGS "-Itauv_msgs:/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Ivision_msgs:/opt/ros/noetic/share/vision_msgs/cmake/../msg;-Ijsk_recognition_msgs:/opt/ros/noetic/share/jsk_recognition_msgs/cmake/../msg;-Ipcl_msgs:/opt/ros/noetic/share/pcl_msgs/cmake/../msg;-Ijsk_footstep_msgs:/opt/ros/noetic/share/jsk_footstep_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg")
 
@@ -34,7 +34,7 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/ControllerDebug.msg" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/ControllerDebug.msg" "tauv_msgs/PIDDebug:tauv_msgs/PIDTuning"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/ControllerDebug.msg" "tauv_msgs/PIDTuning:tauv_msgs/PIDDebug"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg" NAME_WE)
@@ -44,7 +44,7 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg" "geometry_msgs/Point:std_msgs/Header:tauv_msgs/FeatureDetection"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg" "std_msgs/Header:tauv_msgs/FeatureDetection:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FluidDepth.msg" NAME_WE)
@@ -109,7 +109,7 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TrajPoint.msg" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TrajPoint.msg" "geometry_msgs/Vector3:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Twist:geometry_msgs/Pose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TrajPoint.msg" "geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Vector3:geometry_msgs/Pose:geometry_msgs/Twist"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Battery.msg" NAME_WE)
@@ -124,7 +124,7 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/XsensImuData.msg" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/XsensImuData.msg" "std_msgs/Header:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/XsensImuData.msg" "geometry_msgs/Vector3:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TeledyneDvlData.msg" NAME_WE)
@@ -134,7 +134,7 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/NavigationState.msg" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/NavigationState.msg" "std_msgs/Header:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/NavigationState.msg" "geometry_msgs/Vector3:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg" NAME_WE)
@@ -149,17 +149,27 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg" "tauv_msgs/PIDDebug:tauv_msgs/PIDTuning"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg" "tauv_msgs/PIDTuning:tauv_msgs/PIDDebug"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg" "std_msgs/Header:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg" "geometry_msgs/Vector3:std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg" NAME_WE)
+add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg" ""
+)
+
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg" NAME_WE)
+add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg" ""
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv" "geometry_msgs/Point:std_msgs/Header:tauv_msgs/FeatureDetection:tauv_msgs/FeatureDetections"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv" "tauv_msgs/FeatureDetections:std_msgs/Header:tauv_msgs/FeatureDetection:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SonarControl.srv" NAME_WE)
@@ -169,12 +179,12 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFind.srv" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFind.srv" "geometry_msgs/Point:std_msgs/Header:tauv_msgs/FeatureDetection"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFind.srv" "std_msgs/Header:tauv_msgs/FeatureDetection:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindOne.srv" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindOne.srv" "geometry_msgs/Point:std_msgs/Header:tauv_msgs/FeatureDetection"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindOne.srv" "std_msgs/Header:tauv_msgs/FeatureDetection:geometry_msgs/Point"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindClosest.srv" NAME_WE)
@@ -184,7 +194,7 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv" "sensor_msgs/CameraInfo:std_msgs/Header:sensor_msgs/RegionOfInterest"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv" "std_msgs/Header:sensor_msgs/RegionOfInterest:sensor_msgs/CameraInfo"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SyncAlarms.srv" NAME_WE)
@@ -209,12 +219,12 @@ add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetTrajectory.srv" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetTrajectory.srv" "geometry_msgs/Vector3:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Twist:geometry_msgs/Pose:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetTrajectory.srv" "geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Vector3:geometry_msgs/Twist"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetTargetPose.srv" NAME_WE)
 add_custom_target(_tauv_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetTargetPose.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tauv_msgs" "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetTargetPose.srv" "geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Pose"
 )
 
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetPose.srv" NAME_WE)
@@ -259,7 +269,7 @@ _generate_msg_cpp(tauv_msgs
 _generate_msg_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/ControllerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_cpp(tauv_msgs
@@ -271,7 +281,7 @@ _generate_msg_cpp(tauv_msgs
 _generate_msg_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_cpp(tauv_msgs
@@ -349,7 +359,7 @@ _generate_msg_cpp(tauv_msgs
 _generate_msg_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TrajPoint.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_cpp(tauv_msgs
@@ -367,7 +377,7 @@ _generate_msg_cpp(tauv_msgs
 _generate_msg_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/XsensImuData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_cpp(tauv_msgs
@@ -379,7 +389,7 @@ _generate_msg_cpp(tauv_msgs
 _generate_msg_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/NavigationState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_cpp(tauv_msgs
@@ -397,13 +407,25 @@ _generate_msg_cpp(tauv_msgs
 _generate_msg_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_cpp(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_cpp(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 
@@ -411,7 +433,7 @@ _generate_msg_cpp(tauv_msgs
 _generate_srv_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_cpp(tauv_msgs
@@ -423,13 +445,13 @@ _generate_srv_cpp(tauv_msgs
 _generate_srv_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFind.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindOne.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_cpp(tauv_msgs
@@ -441,7 +463,7 @@ _generate_srv_cpp(tauv_msgs
 _generate_srv_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_cpp(tauv_msgs
@@ -471,13 +493,13 @@ _generate_srv_cpp(tauv_msgs
 _generate_srv_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetTrajectory.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_cpp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetTargetPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_cpp(tauv_msgs
@@ -567,6 +589,10 @@ get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Pa
 add_dependencies(tauv_msgs_generate_messages_cpp _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_cpp _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_cpp _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_cpp _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_cpp _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SonarControl.srv" NAME_WE)
@@ -628,7 +654,7 @@ _generate_msg_eus(tauv_msgs
 _generate_msg_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/ControllerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_eus(tauv_msgs
@@ -640,7 +666,7 @@ _generate_msg_eus(tauv_msgs
 _generate_msg_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_eus(tauv_msgs
@@ -718,7 +744,7 @@ _generate_msg_eus(tauv_msgs
 _generate_msg_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TrajPoint.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_eus(tauv_msgs
@@ -736,7 +762,7 @@ _generate_msg_eus(tauv_msgs
 _generate_msg_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/XsensImuData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_eus(tauv_msgs
@@ -748,7 +774,7 @@ _generate_msg_eus(tauv_msgs
 _generate_msg_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/NavigationState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_eus(tauv_msgs
@@ -766,13 +792,25 @@ _generate_msg_eus(tauv_msgs
 _generate_msg_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_eus(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_eus(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 
@@ -780,7 +818,7 @@ _generate_msg_eus(tauv_msgs
 _generate_srv_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_eus(tauv_msgs
@@ -792,13 +830,13 @@ _generate_srv_eus(tauv_msgs
 _generate_srv_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFind.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindOne.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_eus(tauv_msgs
@@ -810,7 +848,7 @@ _generate_srv_eus(tauv_msgs
 _generate_srv_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_eus(tauv_msgs
@@ -840,13 +878,13 @@ _generate_srv_eus(tauv_msgs
 _generate_srv_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetTrajectory.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_eus(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetTargetPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_eus(tauv_msgs
@@ -936,6 +974,10 @@ get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Pa
 add_dependencies(tauv_msgs_generate_messages_eus _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_eus _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_eus _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_eus _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_eus _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SonarControl.srv" NAME_WE)
@@ -997,7 +1039,7 @@ _generate_msg_lisp(tauv_msgs
 _generate_msg_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/ControllerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_lisp(tauv_msgs
@@ -1009,7 +1051,7 @@ _generate_msg_lisp(tauv_msgs
 _generate_msg_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_lisp(tauv_msgs
@@ -1087,7 +1129,7 @@ _generate_msg_lisp(tauv_msgs
 _generate_msg_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TrajPoint.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_lisp(tauv_msgs
@@ -1105,7 +1147,7 @@ _generate_msg_lisp(tauv_msgs
 _generate_msg_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/XsensImuData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_lisp(tauv_msgs
@@ -1117,7 +1159,7 @@ _generate_msg_lisp(tauv_msgs
 _generate_msg_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/NavigationState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_lisp(tauv_msgs
@@ -1135,13 +1177,25 @@ _generate_msg_lisp(tauv_msgs
 _generate_msg_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_lisp(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_lisp(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 
@@ -1149,7 +1203,7 @@ _generate_msg_lisp(tauv_msgs
 _generate_srv_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_lisp(tauv_msgs
@@ -1161,13 +1215,13 @@ _generate_srv_lisp(tauv_msgs
 _generate_srv_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFind.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindOne.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_lisp(tauv_msgs
@@ -1179,7 +1233,7 @@ _generate_srv_lisp(tauv_msgs
 _generate_srv_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_lisp(tauv_msgs
@@ -1209,13 +1263,13 @@ _generate_srv_lisp(tauv_msgs
 _generate_srv_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetTrajectory.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_lisp(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetTargetPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_lisp(tauv_msgs
@@ -1305,6 +1359,10 @@ get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Pa
 add_dependencies(tauv_msgs_generate_messages_lisp _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_lisp _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_lisp _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_lisp _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_lisp _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SonarControl.srv" NAME_WE)
@@ -1366,7 +1424,7 @@ _generate_msg_nodejs(tauv_msgs
 _generate_msg_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/ControllerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_nodejs(tauv_msgs
@@ -1378,7 +1436,7 @@ _generate_msg_nodejs(tauv_msgs
 _generate_msg_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_nodejs(tauv_msgs
@@ -1456,7 +1514,7 @@ _generate_msg_nodejs(tauv_msgs
 _generate_msg_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TrajPoint.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_nodejs(tauv_msgs
@@ -1474,7 +1532,7 @@ _generate_msg_nodejs(tauv_msgs
 _generate_msg_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/XsensImuData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_nodejs(tauv_msgs
@@ -1486,7 +1544,7 @@ _generate_msg_nodejs(tauv_msgs
 _generate_msg_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/NavigationState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_nodejs(tauv_msgs
@@ -1504,13 +1562,25 @@ _generate_msg_nodejs(tauv_msgs
 _generate_msg_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_nodejs(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_nodejs(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 
@@ -1518,7 +1588,7 @@ _generate_msg_nodejs(tauv_msgs
 _generate_srv_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_nodejs(tauv_msgs
@@ -1530,13 +1600,13 @@ _generate_srv_nodejs(tauv_msgs
 _generate_srv_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFind.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindOne.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_nodejs(tauv_msgs
@@ -1548,7 +1618,7 @@ _generate_srv_nodejs(tauv_msgs
 _generate_srv_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_nodejs(tauv_msgs
@@ -1578,13 +1648,13 @@ _generate_srv_nodejs(tauv_msgs
 _generate_srv_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetTrajectory.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_nodejs(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetTargetPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_nodejs(tauv_msgs
@@ -1674,6 +1744,10 @@ get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Pa
 add_dependencies(tauv_msgs_generate_messages_nodejs _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_nodejs _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_nodejs _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_nodejs _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_nodejs _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SonarControl.srv" NAME_WE)
@@ -1735,7 +1809,7 @@ _generate_msg_py(tauv_msgs
 _generate_msg_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/ControllerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_py(tauv_msgs
@@ -1747,7 +1821,7 @@ _generate_msg_py(tauv_msgs
 _generate_msg_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_py(tauv_msgs
@@ -1825,7 +1899,7 @@ _generate_msg_py(tauv_msgs
 _generate_msg_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/TrajPoint.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_py(tauv_msgs
@@ -1843,7 +1917,7 @@ _generate_msg_py(tauv_msgs
 _generate_msg_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/XsensImuData.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_py(tauv_msgs
@@ -1855,7 +1929,7 @@ _generate_msg_py(tauv_msgs
 _generate_msg_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/NavigationState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_py(tauv_msgs
@@ -1873,13 +1947,25 @@ _generate_msg_py(tauv_msgs
 _generate_msg_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg"
   "${MSG_I_FLAGS}"
-  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDTuning.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDDebug.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_msg_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_py(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
+)
+_generate_msg_py(tauv_msgs
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 
@@ -1887,7 +1973,7 @@ _generate_msg_py(tauv_msgs
 _generate_srv_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg"
+  "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_py(tauv_msgs
@@ -1899,13 +1985,13 @@ _generate_srv_py(tauv_msgs
 _generate_srv_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFind.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/MapFindOne.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetection.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_py(tauv_msgs
@@ -1917,7 +2003,7 @@ _generate_srv_py(tauv_msgs
 _generate_srv_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/RegionOfInterest.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/CameraInfo.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_py(tauv_msgs
@@ -1947,13 +2033,13 @@ _generate_srv_py(tauv_msgs
 _generate_srv_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetTrajectory.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_py(tauv_msgs
   "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/SetTargetPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tauv_msgs
 )
 _generate_srv_py(tauv_msgs
@@ -2042,6 +2128,10 @@ add_dependencies(tauv_msgs_generate_messages_py _tauv_msgs_generate_messages_che
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PIDPlannerDebug.msg" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_py _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/PingDetection.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_py _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Ctrl_cmd.msg" NAME_WE)
+add_dependencies(tauv_msgs_generate_messages_py _tauv_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/Can.msg" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_py _tauv_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/FeatureDetectionsSync.srv" NAME_WE)
 add_dependencies(tauv_msgs_generate_messages_py _tauv_msgs_generate_messages_check_deps_${_filename})

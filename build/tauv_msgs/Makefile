@@ -1134,6 +1134,32 @@ _tauv_msgs_generate_messages_check_deps_PingDetection/fast:
 .PHONY : _tauv_msgs_generate_messages_check_deps_PingDetection/fast
 
 #=============================================================================
+# Target rules for targets named _tauv_msgs_generate_messages_check_deps_Ctrl_cmd
+
+# Build rule for target.
+_tauv_msgs_generate_messages_check_deps_Ctrl_cmd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _tauv_msgs_generate_messages_check_deps_Ctrl_cmd
+.PHONY : _tauv_msgs_generate_messages_check_deps_Ctrl_cmd
+
+# fast build rule for target.
+_tauv_msgs_generate_messages_check_deps_Ctrl_cmd/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/build.make CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/build
+.PHONY : _tauv_msgs_generate_messages_check_deps_Ctrl_cmd/fast
+
+#=============================================================================
+# Target rules for targets named _tauv_msgs_generate_messages_check_deps_Can
+
+# Build rule for target.
+_tauv_msgs_generate_messages_check_deps_Can: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _tauv_msgs_generate_messages_check_deps_Can
+.PHONY : _tauv_msgs_generate_messages_check_deps_Can
+
+# fast build rule for target.
+_tauv_msgs_generate_messages_check_deps_Can/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/build.make CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/build
+.PHONY : _tauv_msgs_generate_messages_check_deps_Can/fast
+
+#=============================================================================
 # Target rules for targets named _tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync
 
 # Build rule for target.
@@ -1526,8 +1552,10 @@ help:
 	@echo "... _tauv_msgs_generate_messages_check_deps_AlarmReport"
 	@echo "... _tauv_msgs_generate_messages_check_deps_AlarmWithMessage"
 	@echo "... _tauv_msgs_generate_messages_check_deps_Battery"
+	@echo "... _tauv_msgs_generate_messages_check_deps_Can"
 	@echo "... _tauv_msgs_generate_messages_check_deps_ControllerCommand"
 	@echo "... _tauv_msgs_generate_messages_check_deps_ControllerDebug"
+	@echo "... _tauv_msgs_generate_messages_check_deps_Ctrl_cmd"
 	@echo "... _tauv_msgs_generate_messages_check_deps_DynamicsParameterConfigUpdate"
 	@echo "... _tauv_msgs_generate_messages_check_deps_DynamicsParametersEstimate"
 	@echo "... _tauv_msgs_generate_messages_check_deps_DynamicsTuning"

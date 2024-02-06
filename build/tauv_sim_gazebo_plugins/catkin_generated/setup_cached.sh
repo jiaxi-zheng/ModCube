@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_sim_gazebo_plugins'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_sim_gazebo_plugins:$ROS_PACKAGE_PATH"

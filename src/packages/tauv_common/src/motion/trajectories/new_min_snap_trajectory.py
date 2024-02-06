@@ -245,7 +245,7 @@ class NewMinSnapTrajectory(Trajectory):
                 or abs(current_pose[i] - expected_pose[i]) <= self._correction_thresholds[i]:
                 continue
 
-            print('correcting', i)
+            # print('correcting', i)
             # print(current_pose[i], expected_pose[i])
 
             correction_duration = self._correction_duration_scales[i] * abs(current_pose[i] - expected_pose[i])

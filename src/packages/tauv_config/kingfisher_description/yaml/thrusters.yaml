@@ -5,14 +5,14 @@ servo_min_pwms: [834, 834, 834, 834, 834, 834]
 servo_max_pwms: [2300, 2300, 1200, 2300, 2300, 2300]
 servo_zero_pwms: [1500, 1500, 1200, 1500, 1500, 1500]
 
-default_battery_voltage: 16.0
+default_battery_voltage: 12.0
 
 minimum_pwm_speed: 0
 maximum_pwm_speed: 10000
 negative_min_thrust: 1
-negative_max_thrust: 45
+negative_max_thrust: 8
 positive_min_thrust: 1
-positive_max_thrust: 60
+positive_max_thrust: 10
 thrust_inversions: [1, 1, 1, 1, -1, 1, -1, 1]
 
 # constant, voltage, voltage^2, pwm, pwm^2

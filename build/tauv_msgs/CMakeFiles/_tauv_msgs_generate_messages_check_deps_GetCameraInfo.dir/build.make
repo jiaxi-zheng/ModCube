@@ -67,7 +67,7 @@ include CMakeFiles/_tauv_msgs_generate_messages_check_deps_GetCameraInfo.dir/com
 include CMakeFiles/_tauv_msgs_generate_messages_check_deps_GetCameraInfo.dir/progress.make
 
 CMakeFiles/_tauv_msgs_generate_messages_check_deps_GetCameraInfo:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tauv_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv sensor_msgs/CameraInfo:std_msgs/Header:sensor_msgs/RegionOfInterest
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tauv_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/srv/GetCameraInfo.srv std_msgs/Header:sensor_msgs/RegionOfInterest:sensor_msgs/CameraInfo
 
 _tauv_msgs_generate_messages_check_deps_GetCameraInfo: CMakeFiles/_tauv_msgs_generate_messages_check_deps_GetCameraInfo
 _tauv_msgs_generate_messages_check_deps_GetCameraInfo: CMakeFiles/_tauv_msgs_generate_messages_check_deps_GetCameraInfo.dir/build.make

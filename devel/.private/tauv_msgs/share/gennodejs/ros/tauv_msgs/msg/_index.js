@@ -21,11 +21,13 @@ let DynamicsParametersEstimate = require('./DynamicsParametersEstimate.js');
 let PIDTuning = require('./PIDTuning.js');
 let XsensImuSync = require('./XsensImuSync.js');
 let PingDetection = require('./PingDetection.js');
+let Ctrl_cmd = require('./Ctrl_cmd.js');
 let FeatureDetections = require('./FeatureDetections.js');
 let NavigationState = require('./NavigationState.js');
 let AlarmReport = require('./AlarmReport.js');
 let Battery = require('./Battery.js');
 let MpcRefTraj = require('./MpcRefTraj.js');
+let Can = require('./Can.js');
 let Message = require('./Message.js');
 let FeatureDetection = require('./FeatureDetection.js');
 let GateDetection = require('./GateDetection.js');
@@ -52,11 +54,13 @@ module.exports = {
   PIDTuning: PIDTuning,
   XsensImuSync: XsensImuSync,
   PingDetection: PingDetection,
+  Ctrl_cmd: Ctrl_cmd,
   FeatureDetections: FeatureDetections,
   NavigationState: NavigationState,
   AlarmReport: AlarmReport,
   Battery: Battery,
   MpcRefTraj: MpcRefTraj,
+  Can: Can,
   Message: Message,
   FeatureDetection: FeatureDetection,
   GateDetection: GateDetection,

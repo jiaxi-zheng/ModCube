@@ -2,6 +2,7 @@ import rospy
 import numpy as np
 from numpy.polynomial.polynomial import Polynomial
 from math import floor
+import can
 
 from .maestro import Maestro
 from tauv_util.types import tl
@@ -22,18 +23,33 @@ class Thrusters:
         self._timeout: float = 1.0
 
         self._load_config()
+        self._bus = can.interface.Bus(channel='can0', bustype='socketcan')
 
-        while not self._try_init():
-            rospy.sleep(0.5)
-        rospy.loginfo('initialized maestro')
+        # while not self._try_init():
+        #     rospy.sleep(0.5)
+        # rospy.loginfo('initialized maestro')
 
-        self._is_armed: bool = False
+        self._is_armed: bool = True
         self._arm_service: rospy.Service = rospy.Service('vehicle/thrusters/arm', SetBool, self._handle_arm)
 
-        self._target_thrust_subs = []
+        # self._target_thrust_subs = []
+
+        self._target_thrust_subs: [rospy.Subscriber] = []
+
         for thruster_id in range(len(self._thruster_channels)):
             target_thrust_sub = rospy.Subscriber(f'vehicle/thrusters/{thruster_id}/target_thrust', Float64, self._handle_target_thrust, callback_args=thruster_id)
+            print("thruster_id : ", thruster_id)
+            print("self.target_thrust_sub : ", target_thrust_sub)
             self._target_thrust_subs.append(target_thrust_sub)
+
+        print("#################")
+        # for thruster_id in self._thruster_ids:
+        #     target_thrust_pub = rospy.Publisher(
+        #         f'vehicle/thrusters/{thruster_id}/target_thrust',
+        #         Float64,
+        #         queue_size=10
+        #     )
+        #     self._target_thrust_pubs.append(target_thrust_pub)
 
         self._target_position_subs = []
         for servo_id in range(len(self._servo_channels)):
@@ -70,7 +86,7 @@ class Thrusters:
             self._target_thrusts = [0] * len(self._thruster_channels)
             # self._thrust_update_time = rospy.Time.now()
 
-        self._maestro.clearErrors()
+        # self._maestro.clearErrors()
 
         for (thruster, thrust) in enumerate(self._target_thrusts):
             self._set_thrust(thruster, thrust)
@@ -99,15 +115,39 @@ class Thrusters:
 
     def _set_thrust(self, thruster: int, thrust: float):
         pwm_speed = self._get_pwm_speed(thruster, thrust)
+        print("thruster : ", thruster)
+        print("thrust : ", thrust)
+        print("pwm_speed : ", pwm_speed)
+        print("##############")
+        msgs = [can.Message(arbitration_id=0x330, data=[data.Ctrl_vel_X[0],data.Ctrl_vel_Y[0],data.Ctrl_vel_Z[0],data.Ctrl_fixed_Z[0],
+                                                        data.Ctrl_vel_Rol[0],data.Ctrl_vel_Pit[0],data.Ctrl_vel_Yaw[0],data.Ctrl_fixed_Yaw[0]])
+                # can.Message(arbitration_id=0x331, data=[data.Ctrl_vel_X[1],data.Ctrl_vel_Y[1],data.Ctrl_vel_Z[1],data.Ctrl_fixed_Z[1],
+                #                                         data.Ctrl_vel_Rol[1],data.Ctrl_vel_Pit[1],data.Ctrl_vel_Yaw[1],data.Ctrl_fixed_Yaw[1]]),
+                # can.Message(arbitration_id=0x332, data=[data.Ctrl_vel_X[2],data.Ctrl_vel_Y[2],data.Ctrl_vel_Z[2],data.Ctrl_fixed_Z[2],
+                #                                         data.Ctrl_vel_Rol[2],data.Ctrl_vel_Pit[2],data.Ctrl_vel_Yaw[2],data.Ctrl_fixed_Yaw[2]]),
+                # can.Message(arbitration_id=0x333, data=[data.Ctrl_vel_X[3],data.Ctrl_vel_Y[3],data.Ctrl_vel_Z[3],data.Ctrl_fixed_Z[3],
+                #                                         data.Ctrl_vel_Rol[3],data.Ctrl_vel_Pit[3],data.Ctrl_vel_Yaw[3],data.Ctrl_fixed_Yaw[3]]),
+                # can.Message(arbitration_id=0x334, data=[data.Ctrl_pivot_1[0],data.Ctrl_pivot_2[0],data.Ctrl_pivot_3[0],data.Ctrl_pivot_4[0],
+                #                                         data.Ctrl_emagnet_1[0],data.Ctrl_emagnet_2[0],data.Ctrl_emagnet_3[0],data.Ctrl_emagnet_4[0]]),
+                # can.Message(arbitration_id=0x334, data=[data.Ctrl_pivot_1[1],data.Ctrl_pivot_2[1],data.Ctrl_pivot_3[1],data.Ctrl_pivot_4[1],
+                #                                         data.Ctrl_emagnet_1[1],data.Ctrl_emagnet_2[1],data.Ctrl_emagnet_3[1],data.Ctrl_emagnet_4[1]]),
+                # can.Message(arbitration_id=0x334, data=[data.Ctrl_pivot_1[2],data.Ctrl_pivot_2[2],data.Ctrl_pivot_3[2],data.Ctrl_pivot_4[2],
+                #                                         data.Ctrl_emagnet_1[2],data.Ctrl_emagnet_2[2],data.Ctrl_emagnet_3[2],data.Ctrl_emagnet_4[2]]),
+                # can.Message(arbitration_id=0x334, data=[data.Ctrl_pivot_1[3],data.Ctrl_pivot_2[3],data.Ctrl_pivot_3[3],data.Ctrl_pivot_4[3],
+                #                                         data.Ctrl_emagnet_1[3],data.Ctrl_emagnet_2[3],data.Ctrl_emagnet_3[3],data.Ctrl_emagnet_4[3]])
+                ]
 
-        self._maestro.setTarget(pwm_speed * 4, self._thruster_channels[thruster])
+        for msg in msgs:
+            self._bus.send(msg)
+            print("Sent CAN message: ID=0x{:X}, data={}".format(msg.arbitration_id, bytes(msg.data)))
+        # self._maestro.setTarget(pwm_speed * 4, self._thruster_channels[thruster])
 
     def _set_position(self, servo: int, position: float):
         if position > 0:
             pwm_speed = self._servo_zero_pwms[servo] + position * (self._servo_max_pwms[servo] - self._servo_zero_pwms[servo])
         else:
             pwm_speed = self._servo_zero_pwms[servo] - position * (self._servo_min_pwms[servo] - self._servo_zero_pwms[servo])
-        self._maestro.setTarget(int(pwm_speed * 4), self._servo_channels[servo])
+        # self._maestro.setTarget(int(pwm_speed * 4), self._servo_channels[servo])
 
     def _get_pwm_speed(self, thruster: int, thrust: float) -> int:
         pwm_speed = 1500
@@ -147,7 +187,7 @@ class Thrusters:
         return pwm_speed
 
     def _load_config(self):
-        self._maestro_port: str = rospy.get_param('~maestro_port')
+        # self._maestro_port: str = rospy.get_param('~maestro_port')
         self._thruster_channels: [int] = rospy.get_param('~thruster_channels')
         self._servo_channels: [int] = rospy.get_param('~servo_channels')
         self._servo_min_pwms: [int] = rospy.get_param('~servo_min_pwms')

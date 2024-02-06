@@ -146,6 +146,8 @@ clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDTuning.dir/clean
 clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDDebug.dir/clean
 clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDPlannerDebug.dir/clean
 clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/clean
+clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/clean
+clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/clean
 clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync.dir/clean
 clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_SonarControl.dir/clean
 clean: CMakeFiles/_tauv_msgs_generate_messages_check_deps_MapFind.dir/clean
@@ -2151,6 +2153,58 @@ CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/clean:
 .PHONY : CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir
+
+# All Build rule for target.
+CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/build.make CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/build.make CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles --progress-num= "Built target _tauv_msgs_generate_messages_check_deps_Ctrl_cmd"
+.PHONY : CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 0
+.PHONY : CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/rule
+
+# Convenience name for target.
+_tauv_msgs_generate_messages_check_deps_Ctrl_cmd: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/rule
+.PHONY : _tauv_msgs_generate_messages_check_deps_Ctrl_cmd
+
+# clean rule for target.
+CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/build.make CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/clean
+.PHONY : CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir
+
+# All Build rule for target.
+CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/build.make CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/build.make CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles --progress-num= "Built target _tauv_msgs_generate_messages_check_deps_Can"
+.PHONY : CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 0
+.PHONY : CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/rule
+
+# Convenience name for target.
+_tauv_msgs_generate_messages_check_deps_Can: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/rule
+.PHONY : _tauv_msgs_generate_messages_check_deps_Can
+
+# clean rule for target.
+CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/build.make CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/clean
+.PHONY : CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync.dir
 
 # All Build rule for target.
@@ -2577,6 +2631,8 @@ CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_genera
 CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDPlannerDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/all
+CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/all
+CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/all
 CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync.dir/all
 CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_SonarControl.dir/all
 CMakeFiles/tauv_msgs_generate_messages_cpp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_MapFind.dir/all
@@ -2676,6 +2732,8 @@ CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_genera
 CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDPlannerDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/all
+CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/all
+CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/all
 CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync.dir/all
 CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_SonarControl.dir/all
 CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_MapFind.dir/all
@@ -2693,12 +2751,12 @@ CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_genera
 CMakeFiles/tauv_msgs_generate_messages_eus.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_UpdateDynamicsParameterConfigs.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tauv_msgs_generate_messages_eus.dir/build.make CMakeFiles/tauv_msgs_generate_messages_eus.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tauv_msgs_generate_messages_eus.dir/build.make CMakeFiles/tauv_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target tauv_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target tauv_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/tauv_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tauv_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tauv_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 0
 .PHONY : CMakeFiles/tauv_msgs_generate_messages_eus.dir/rule
@@ -2724,7 +2782,7 @@ CMakeFiles/tauv_msgs_geneus.dir/all: CMakeFiles/tauv_msgs_generate_messages_eus.
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tauv_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tauv_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 0
 .PHONY : CMakeFiles/tauv_msgs_geneus.dir/rule
@@ -2775,6 +2833,8 @@ CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_gener
 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDPlannerDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/all
+CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/all
+CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/all
 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync.dir/all
 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_SonarControl.dir/all
 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_MapFind.dir/all
@@ -2792,12 +2852,12 @@ CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_gener
 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_UpdateDynamicsParameterConfigs.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tauv_msgs_generate_messages_lisp.dir/build.make CMakeFiles/tauv_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tauv_msgs_generate_messages_lisp.dir/build.make CMakeFiles/tauv_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target tauv_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles --progress-num=42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target tauv_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tauv_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 0
 .PHONY : CMakeFiles/tauv_msgs_generate_messages_lisp.dir/rule
@@ -2823,7 +2883,7 @@ CMakeFiles/tauv_msgs_genlisp.dir/all: CMakeFiles/tauv_msgs_generate_messages_lis
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tauv_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tauv_msgs_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/build/tauv_msgs/CMakeFiles 0
 .PHONY : CMakeFiles/tauv_msgs_genlisp.dir/rule
@@ -2874,6 +2934,8 @@ CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_gen
 CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDPlannerDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/all
+CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/all
+CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/all
 CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync.dir/all
 CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_SonarControl.dir/all
 CMakeFiles/tauv_msgs_generate_messages_nodejs.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_MapFind.dir/all
@@ -2973,6 +3035,8 @@ CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generat
 CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PIDPlannerDebug.dir/all
 CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_PingDetection.dir/all
+CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Ctrl_cmd.dir/all
+CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_Can.dir/all
 CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetectionsSync.dir/all
 CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_SonarControl.dir/all
 CMakeFiles/tauv_msgs_generate_messages_py.dir/all: CMakeFiles/_tauv_msgs_generate_messages_check_deps_MapFind.dir/all

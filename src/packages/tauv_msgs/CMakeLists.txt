@@ -34,6 +34,8 @@ add_message_files(
   PIDDebug.msg
   PIDPlannerDebug.msg
   PingDetection.msg
+  Ctrl_cmd.msg
+  Can.msg
 )
 
 

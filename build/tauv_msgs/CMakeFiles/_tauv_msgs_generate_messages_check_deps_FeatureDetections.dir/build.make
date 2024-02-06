@@ -67,7 +67,7 @@ include CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetections.dir
 include CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetections.dir/progress.make
 
 CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetections:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tauv_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg geometry_msgs/Point:std_msgs/Header:tauv_msgs/FeatureDetection
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tauv_msgs /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_msgs/msg/FeatureDetections.msg std_msgs/Header:tauv_msgs/FeatureDetection:geometry_msgs/Point
 
 _tauv_msgs_generate_messages_check_deps_FeatureDetections: CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetections
 _tauv_msgs_generate_messages_check_deps_FeatureDetections: CMakeFiles/_tauv_msgs_generate_messages_check_deps_FeatureDetections.dir/build.make
