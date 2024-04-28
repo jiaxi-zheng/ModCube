@@ -85,9 +85,9 @@ def generate_spherical_fibonacci_points(num_points):
     x, y, z = np.cos(theta) * np.sin(phi), np.sin(theta) * np.sin(phi), np.cos(phi)
     return np.vstack((x, y, z)).T
 
-def plot_cubes(positions,sampled_points):
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
+def plot_cubes(ax,positions,sampled_points):
+    # fig = plt.figure()
+    # ax = fig.add_subplot(111, projection='3d')
     cube_size = 25  # mm
     cube_vertices = np.array([[0, 0, 0], [1, 0, 0], [1, 1, 0], [0, 1, 0],
                               [0, 0, 1], [1, 0, 1], [1, 1, 1], [0, 1, 1]])
@@ -121,11 +121,10 @@ def plot_cubes(positions,sampled_points):
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
     ax.set_title('Structure of Cubes with Center')
-    plt.show()
 
-def plot_global_search(directions, areas):
-    fig = plt.figure(figsize=(10, 8))
-    ax = fig.add_subplot(111, projection='3d')
+def plot_global_search(ax,directions, areas):
+    # fig = plt.figure(figsize=(10, 8))
+    # ax = fig.add_subplot(111, projection='3d')
     ax.set_title("Visualizing Frontal Surface Areas")
 
     # Normalize areas for coloring
@@ -148,8 +147,9 @@ def plot_global_search(directions, areas):
     # Add a color bar to indicate the scale of the areas
     mappable = plt.cm.ScalarMappable(norm=norm, cmap='viridis')
     mappable.set_array(areas)
-    cbar = plt.colorbar(mappable, ax=ax, shrink=0.5, aspect=10)
-    cbar.set_label('Frontal Surface Area')
+    
+    # cbar = plt.colorbar(mappable, ax=ax, shrink=0.5, aspect=10)
+    # cbar.set_label('Frontal Surface Area')
 
     # Setting axes limits
     max_extent = np.max(np.linalg.norm(scaled_directions, axis=1))
@@ -160,13 +160,26 @@ def plot_global_search(directions, areas):
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
 
-    plt.show()
+def sync_views(fig, ax1, ax2):
+    """Synchronize the view angles of two 3D subplots."""
+    def on_move(event):
+        if event.inaxes == ax1:
+            ax2.view_init(elev=ax1.elev, azim=ax1.azim)
+        elif event.inaxes == ax2:
+            ax1.view_init(elev=ax2.elev, azim=ax2.azim)
+        fig.canvas.draw_idle()
+
+    return on_move
 
 def main():
-    num_cubes = random.randint(5, 15)
+    num_cubes = random.randint(5, 10)
     positions,sampled_points = generate_structure(num_cubes)
 
-    plot_cubes(positions,sampled_points)
+    fig = plt.figure(figsize=(16, 10))
+    ax1 = fig.add_subplot(121, projection='3d')
+    ax2 = fig.add_subplot(122, projection='3d')
+    plot_cubes(ax1, positions, sampled_points)
+
     num_points = 1000  # Number of points/directions on the sphere
     directions = generate_spherical_fibonacci_points(num_points)
     directions /= np.linalg.norm(directions, axis=1)[:, None]  # Normalize
@@ -176,7 +189,12 @@ def main():
         proj_pos, proj_map = project_cubes(sampled_points, dir)
         visible_area = calculate_visible_area_convex_hull(proj_pos)
         visible_areas.append(visible_area)
-    plot_global_search(directions, visible_areas)
+    plot_global_search(ax2, directions, visible_areas)
+    callback = sync_views(fig, ax1, ax2)
+    fig.canvas.mpl_connect('button_release_event', callback)
+    fig.canvas.mpl_connect('motion_notify_event', callback)
+
+    plt.show()
 
 if __name__ == "__main__":
     main()
