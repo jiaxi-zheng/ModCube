@@ -66,16 +66,12 @@ If you use or reference this work, please cite our paper:
 
 ```
 bibtex
-Copy
-@article{zheng2025rsmodcubes,
-  title     = {RS-ModCubes: Self-Reconfigurable, Scalable Modular Cubic Robots for Underwater Operations},
-  author    = {Zheng, Jiaxi and Dai, Guangmin and He, Botao and Mu, Zhaoyang and Meng, Zhaochen and Zhang, Tianyi and Zhi, Weiming and Fan, Dixia},
-  journal   = {IEEE Robotics and Automation Letters},
-  volume    = {10},
-  number    = {4},
-  pages     = {3534--3541},
-  year      = {2025},
-  publisher = {IEEE}
+@article{zheng2025rs,
+  title={Rs-modcubes: Self-reconfigurable, scalable, modular cubic robots for underwater operations},
+  author={Zheng, Jiaxi and Dai, Guangmin and He, Botao and Mu, Zhaoyang and Meng, Zhaochen and Zhang, Tianyi and Zhi, Weiming and Fan, Dixia},
+  journal={IEEE Robotics and Automation Letters},
+  year={2025},
+  publisher={IEEE}
 }
 ```
 
