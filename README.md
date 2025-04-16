@@ -33,35 +33,25 @@ packages/
 ├── modcube_sim_worlds          # Simulation environments
 ├── modcube_vehicle             # Vehicle-specific modules and configurations
 └── uuv_simulator               # Underwater vehicle simulator dependencies
+
+##
 Quick Start
-Follow these steps to quickly launch the simulation and execute a simple mission command:
 
-1. Launch the Simulation Environment
-Start the underwater simulation using Gazebo:
+Launch the Simulation Environment
 
-bash
-Copy
 roslaunch modcube_sim kingfisher_umd_sim.launch
-2. Launch Mission Teleoperation
-Enable the teleop interface for mission control:
 
-bash
-Copy
+Launch Mission Teleoperation
+
 roslaunch modcube_mission teleop_mission.launch
-3. Set a Navigation Goal
-Use the following command to set a target pose for the robot:
 
-bash
-Copy
+Set a Navigation Goal
+
 tap in goto 2 2 2 1 1 1 1
-2 2 2 → Target position (x, y, z)
 
-1 1 1 1 → Target orientation quaternion (qx, qy, qz, qw)
-
-Contributions & Acknowledgments
-RS-ModCubes is a significant step forward in underwater robotics, enabling adaptable and cost-effective solutions for complex underwater tasks.
-
-Special thanks to our co-authors and collaborators, and an acknowledgment to the CMU TartanAUV Team for their pioneering work that this codebase builds upon.
+# 2 2 2 → Target position (x, y, z)
+# 1 1 1 1 → Target orientation quaternion (qx, qy, qz, qw)
+##
 
 Citation
 If you use or reference this work, please cite our paper:
@@ -80,12 +70,4 @@ Copy
 }
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-For any questions, contributions, or collaboration inquiries, please open an issue in this repository or contact us through the project website.
-
-yaml
-Copy
-
 ---
-
-Feel free to adjust the sections as needed for your audience or to include additional information such
