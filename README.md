@@ -1,24 +1,12 @@
 # RS-ModCubes: Self-Reconfigurable, Scalable Modular Cubic Robots for Underwater Operations
 
-This repository contains the simulation, control, and mission planning framework for **RS-ModCubes** a reconfigurable, scalable modular underwater robot system. Our approach is documented in our IEEE Robotics and Automation Letters paper, which demonstrates advanced underwater robotic capabilities through modularity and adaptive design.
+This repository contains the simulation, control, and mission planning framework for **RS-ModCubes** a reconfigurable, scalable modular underwater robot system. 
 
 🔗 **Paper**: [RS-ModCubes: Self-Reconfigurable, Scalable Modular Cubic Robots for Underwater Operations](https://doi.org/10.1109/LRA.2025.3543139)  
 🌐 **Project Website**: [https://jiaxi-zheng.github.io/ModCube.github.io](https://jiaxi-zheng.github.io/ModCube.github.io)
 
-> _This code has been second-developed based on the original framework from the CMU TartanAUV Team (https://www.tartanauv.com/) (Kingfisher), extending their robust foundation for underwater robotics research._
+> _This code has been second-developed based on the original framework from the CMU TartanAUV Team (https://www.tartanauv.com/) (Kingfisher)._
 
----
-
-## Overview
-
-RS-ModCubes addresses the challenges of underwater robotics by offering:
-- **6-DoF mobility** in complex environments.
-- **Magnetic docking and self-reconfiguration** for adaptable mission profiles.
-- **Robust simulation and mission planning** using ROS and Gazebo.
-
-Our system leverages physics-informed hydrodynamic modeling (via Monte Carlo approximation) and advanced control techniques to achieve precise underwater maneuvers and structural reconfiguration.
-
----
 
 ## Repository Structure
 
