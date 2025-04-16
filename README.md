@@ -57,8 +57,8 @@ tap in
 goto 2 2 2 1 1 1 1
 ```
 
-# 2 2 2 → Target position (x, y, z)
-# 1 1 1 1 → Target orientation quaternion (qx, qy, qz, qw)
+2 2 2 → Target position (x, y, z)
+1 1 1 1 → Target orientation quaternion (qx, qy, qz, qw)
 ##
 
 Citation
