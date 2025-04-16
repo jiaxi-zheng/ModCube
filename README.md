@@ -64,6 +64,7 @@ goto 2 2 2 1 1 1 1
 Citation
 If you use or reference this work, please cite our paper:
 
+```
 bibtex
 Copy
 @article{zheng2025rsmodcubes,
@@ -76,6 +77,8 @@ Copy
   year      = {2025},
   publisher = {IEEE}
 }
+```
+
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 ---
