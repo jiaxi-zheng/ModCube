@@ -1,0 +1,10 @@
+<launch>
+    <arg name="config_pkg" />
+<!-- 
+    <include file="$(find modcube_vehicle)/launch/xsens_imu/xsens_imu.launch" />
+    <include file="$(find modcube_vehicle)/launch/xsens_imu_sync/xsens_imu_sync.launch" />
+    <include file="$(find modcube_vehicle)/launch/teledyne_dvl/teledyne_dvl.launch"/> -->
+    <include file="$(find modcube_vehicle)/launch/thrusters/thrusters.launch" />
+    <!-- <include file="$(find modcube_vehicle)/launch/arduino/arduino.launch" /> -->
+
+</launch>

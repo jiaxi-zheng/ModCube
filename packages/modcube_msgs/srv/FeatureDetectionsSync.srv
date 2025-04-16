@@ -1,0 +1,3 @@
+modcube_msgs/FeatureDetections detections
+---
+bool success

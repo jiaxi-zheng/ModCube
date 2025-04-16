@@ -1,0 +1,17 @@
+<launch>
+    <arg name="model" />
+    <arg name="gui" default="true" />    
+
+    <!-- Convert Xacro to URDF -->
+    <param name="robot_description" textfile="$(find modcube_sim_description)/urdf/default.xacro" />
+
+    <param name="use_gui" value="$(arg gui)" />
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <!-- Set RViz Background Color -->
+    <param name="rviz/Background Color" value="255;255;255" />
+
+    <!-- Launch RViz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find modcube_sim_description)/urdf.rviz" />
+</launch>

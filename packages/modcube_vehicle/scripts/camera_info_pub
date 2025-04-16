@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+from camera_info_pub import camera_info_pub
+
+if __name__ == "__main__":
+    camera_info_pub.main()

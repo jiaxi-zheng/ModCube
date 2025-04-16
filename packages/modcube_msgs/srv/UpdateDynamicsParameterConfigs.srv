@@ -1,0 +1,3 @@
+modcube_msgs/DynamicsParameterConfigUpdate[] updates
+---
+bool success
