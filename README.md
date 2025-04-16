@@ -39,18 +39,26 @@ packages/
 
 Launch the Simulation Environment
 
-$ roslaunch modcube_sim kingfisher_umd_sim.launch
+```
+roslaunch modcube_sim kingfisher_umd_sim.launch
+```
 
 Launch Mission Teleoperation
 
-$ roslaunch modcube_mission teleop_mission.launch
+```
+roslaunch modcube_mission teleop_mission.launch
+```
 
 Set a Navigation Goal
 
-tap in $ goto 2 2 2 1 1 1 1
+tap in 
 
-$ 2 2 2 → Target position (x, y, z)
-$ 1 1 1 1 → Target orientation quaternion (qx, qy, qz, qw)
+```
+goto 2 2 2 1 1 1 1
+```
+
+# 2 2 2 → Target position (x, y, z)
+# 1 1 1 1 → Target orientation quaternion (qx, qy, qz, qw)
 ##
 
 Citation
