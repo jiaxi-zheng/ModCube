@@ -1,81 +1,73 @@
 # RS-ModCubes: Self-Reconfigurable, Scalable Modular Cubic Robots for Underwater Operations
 
-This repository provides the full system implementation for **RS-ModCubes**, a modular and reconfigurable underwater robotic platform designed for scalable, task-adaptive operations. RS-ModCubes are capable of 6-DoF control, self-docking via onboard electromagnets, and autonomous trajectory tracking and assembly.
+This repository contains the simulation, control, and mission planning framework for **RS-ModCubes**—a reconfigurable, scalable modular underwater robot system. Our approach is documented in our IEEE Robotics and Automation Letters paper, which demonstrates advanced underwater robotic capabilities through modularity and adaptive design.
 
- **Paper**: [RS-ModCubes: Self-Reconfigurable, Scalable Modular Cubic Robots for Underwater Operations](https://doi.org/10.1109/LRA.2025.3543139)  
- **Project Page**: [https://jiaxi-zheng.github.io/ModCube.github.io](https://jiaxi-zheng.github.io/ModCube.github.io)
+🔗 **Paper**: [RS-ModCubes: Self-Reconfigurable, Scalable Modular Cubic Robots for Underwater Operations](https://doi.org/10.1109/LRA.2025.3543139)  
+🌐 **Project Website**: [https://jiaxi-zheng.github.io/ModCube.github.io](https://jiaxi-zheng.github.io/ModCube.github.io)
 
-> This codebase is a second-stage development based on the simulation and software stack provided by the **CMU TartanAUV Team**, specifically the "Kingfisher" AUV platform.
+> _This code has been second-developed based on the original framework from the CMU TartanAUV Team (Kingfisher), extending their robust foundation for underwater robotics research._
 
 ---
 
-##  Package Overview
+## Overview
+
+RS-ModCubes addresses the challenges of underwater robotics by offering:
+- **6-DoF mobility** in complex environments.
+- **Magnetic docking and self-reconfiguration** for adaptable mission profiles.
+- **Robust simulation and mission planning** using ROS and Gazebo.
+
+Our system leverages physics-informed hydrodynamic modeling (via Monte Carlo approximation) and advanced control techniques to achieve precise underwater maneuvers and structural reconfiguration.
+
+---
+
+## Repository Structure
 
 ```bash
 packages/
-├── modcube_common              # Shared control logic, services, and helper scripts
-├── modcube_config              # Robot URDFs, parameter files, and sim configs
-│   ├── modcube_description     # Mechanical design and static config
-│   └── modcube_sim_description # Gazebo-compatible description
-├── modcube_mission             # Mission-level planning and teleoperation
-├── modcube_msgs                # Custom ROS message and service definitions
-├── modcube_sim                 # Main Gazebo simulation launch files
-├── modcube_sim_gazebo_plugins  # Custom underwater physics plugins
-├── modcube_sim_worlds          # Predefined simulation environments
-├── modcube_vehicle             # Vehicle abstraction layers
-└── uuv_simulator               # Dependencies for underwater hydrodynamics
-Getting Started
+├── modcube_common              # Shared utilities and core control logic
+├── modcube_config              # Configuration files and URDFs for simulation
+├── modcube_mission             # Mission execution and teleoperation modules
+├── modcube_msgs                # Custom ROS messages and service definitions
+├── modcube_sim                 # Gazebo simulation interface and launch files
+├── modcube_sim_gazebo_plugins  # Underwater dynamics plugins for Gazebo
+├── modcube_sim_worlds          # Simulation environments
+├── modcube_vehicle             # Vehicle-specific modules and configurations
+└── uuv_simulator               # Underwater vehicle simulator dependencies
+Quick Start
+Follow these steps to quickly launch the simulation and execute a simple mission command:
+
 1. Launch the Simulation Environment
+Start the underwater simulation using Gazebo:
+
 bash
 Copy
-Edit
 roslaunch modcube_sim kingfisher_umd_sim.launch
-This brings up the RS-ModCube simulation in a Gazebo world with underwater dynamics enabled.
+2. Launch Mission Teleoperation
+Enable the teleop interface for mission control:
 
-2. Start Mission Control & Teleoperation
 bash
 Copy
-Edit
 roslaunch modcube_mission teleop_mission.launch
-This node handles manual or scripted control of the robot and includes keyboard/joystick-based teleoperation.
+3. Set a Navigation Goal
+Use the following command to set a target pose for the robot:
 
-3. Send a Navigation Command
 bash
 Copy
-Edit
 tap in goto 2 2 2 1 1 1 1
-2 2 2 represents the target position (x, y, z)
+2 2 2 → Target position (x, y, z)
 
-1 1 1 1 represents the target orientation quaternion (qx, qy, qz, qw)
+1 1 1 1 → Target orientation quaternion (qx, qy, qz, qw)
 
-This command interfaces with the mission planner to reconfigure or move the robot in the desired direction.
+Contributions & Acknowledgments
+RS-ModCubes is a significant step forward in underwater robotics, enabling adaptable and cost-effective solutions for complex underwater tasks.
 
-Key Features
-Self-reconfiguration via magnetic docking with tolerance-guided alignment
-
-Monte Carlo–based hydrodynamic modeling using frontal drag approximations
-
-Model-based PD control with thrust allocation for power efficiency
-
-Minimum snap trajectory generation for smooth, accurate path following
-
-Benchmarking tools for actuation capability and morphological analysis
-
-Example Use Cases
-Spiral trajectory tracking in 3D
-
-Two-module autonomous docking in constrained space
-
-Multi-module formation with Möbius trajectory planning
-
-For visuals and demos, see our project site.
+Special thanks to our co-authors and collaborators, and an acknowledgment to the CMU TartanAUV Team for their pioneering work that this codebase builds upon.
 
 Citation
-If you use this repository or refer to our methodology, please cite the following publication:
+If you use or reference this work, please cite our paper:
 
 bibtex
 Copy
-Edit
 @article{zheng2025rsmodcubes,
   title     = {RS-ModCubes: Self-Reconfigurable, Scalable Modular Cubic Robots for Underwater Operations},
   author    = {Zheng, Jiaxi and Dai, Guangmin and He, Botao and Mu, Zhaoyang and Meng, Zhaochen and Zhang, Tianyi and Zhi, Weiming and Fan, Dixia},
@@ -86,16 +78,14 @@ Edit
   year      = {2025},
   publisher = {IEEE}
 }
-🤝 Acknowledgements
-This work would not have been possible without the support of my co-authors, mentors, and the collaborative teams at Carnegie Mellon University and Westlake University.
-We also gratefully acknowledge the foundational work done by the CMU TartanAUV team.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-For questions or contributions, feel free to open an issue or contact me via the project website.
+For any questions, contributions, or collaboration inquiries, please open an issue in this repository or contact us through the project website.
 
 yaml
 Copy
-Edit
 
 ---
 
-Let me know if you'd like to generate READMEs per sub-package (e.g., `modcube_mission/README.md`)
+Feel free to adjust the sections as needed for your audience or to include additional information such
