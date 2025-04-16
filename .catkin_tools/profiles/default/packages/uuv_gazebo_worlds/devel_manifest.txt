@@ -1,5 +1,0 @@
-packages/uuv_simulator/uuv_gazebo_worlds
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_worlds/cmake.lock /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/./cmake.lock
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_worlds/share/uuv_gazebo_worlds/cmake/uuv_gazebo_worldsConfig.cmake /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/uuv_gazebo_worlds/cmake/uuv_gazebo_worldsConfig.cmake
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_worlds/share/uuv_gazebo_worlds/cmake/uuv_gazebo_worldsConfig-version.cmake /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/uuv_gazebo_worlds/cmake/uuv_gazebo_worldsConfig-version.cmake
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_gazebo_worlds/lib/pkgconfig/uuv_gazebo_worlds.pc /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/uuv_gazebo_worlds.pc

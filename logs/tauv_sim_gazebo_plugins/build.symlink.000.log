@@ -1,5 +1,0 @@
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_sim_gazebo_plugins/cmake/tauv_sim_gazebo_pluginsConfig.cmake
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_sim_gazebo_plugins/cmake/tauv_sim_gazebo_pluginsConfig-version.cmake
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/libtauv_thruster_plugin.so
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/libtauv_navigation_state_plugin.so
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/tauv_sim_gazebo_plugins.pc

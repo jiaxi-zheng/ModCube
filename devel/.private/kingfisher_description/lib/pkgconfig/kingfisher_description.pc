@@ -1,8 +1,0 @@
-prefix=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/kingfisher_description
-
-Name: kingfisher_description
-Description: Description of kingfisher_description
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

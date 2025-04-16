@@ -1,7 +1,0 @@
-packages/tauv_sim_gazebo_plugins
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/cmake.lock /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/./cmake.lock
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/share/tauv_sim_gazebo_plugins/cmake/tauv_sim_gazebo_pluginsConfig.cmake /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_sim_gazebo_plugins/cmake/tauv_sim_gazebo_pluginsConfig.cmake
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/share/tauv_sim_gazebo_plugins/cmake/tauv_sim_gazebo_pluginsConfig-version.cmake /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_sim_gazebo_plugins/cmake/tauv_sim_gazebo_pluginsConfig-version.cmake
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/lib/libtauv_thruster_plugin.so /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/libtauv_thruster_plugin.so
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/lib/libtauv_navigation_state_plugin.so /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/libtauv_navigation_state_plugin.so
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim_gazebo_plugins/lib/pkgconfig/tauv_sim_gazebo_plugins.pc /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/tauv_sim_gazebo_plugins.pc

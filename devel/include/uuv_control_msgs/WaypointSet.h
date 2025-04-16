@@ -1,1 +1,0 @@
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/include/uuv_control_msgs/WaypointSet.h

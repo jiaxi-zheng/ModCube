@@ -1,8 +1,0 @@
-# generated from catkin/cmake/template/pkg.context.pc.in
-CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_vehicle/src".split(';') if "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/src/packages/tauv_vehicle/src" != "" else []
-PROJECT_CATKIN_DEPENDS = "roscpp;tf2;tf2_ros;std_msgs;geometry_msgs;image_transport;sensor_msgs;tf;imu_filter_madgwick;imu_transformer;tauv_msgs;std_srvs;tauv_common".replace(';', ' ')
-PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
-PROJECT_NAME = "tauv_vehicle"
-PROJECT_SPACE_DIR = "/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_vehicle"
-PROJECT_VERSION = "0.0.0"

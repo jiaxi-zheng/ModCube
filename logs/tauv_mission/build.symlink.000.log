@@ -1,9 +1,0 @@
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_mission/cmake/tauv_missionConfig-version.cmake
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/tauv_mission/cmake/tauv_missionConfig.cmake
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/mission_manager
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/bin/teleop_mission
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/mission_manager/__init__.py
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/tasks/__init__.py
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/missions/__init__.py
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/python3/dist-packages/teleop_mission/__init__.py
-Symlinking /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/tauv_mission.pc

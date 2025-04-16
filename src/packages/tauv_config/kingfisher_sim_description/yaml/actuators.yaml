@@ -1,8 +1,0 @@
-has_torpedo: false
-has_marker: false
-has_arm: false
-has_suction: false
-torpedo_servo: 0
-marker_servo: 1
-arm_servo: 2
-suction_servo: 5

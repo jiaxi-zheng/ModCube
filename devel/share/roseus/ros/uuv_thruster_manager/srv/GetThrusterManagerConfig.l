@@ -1,1 +1,0 @@
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_thruster_manager/share/roseus/ros/uuv_thruster_manager/srv/GetThrusterManagerConfig.l

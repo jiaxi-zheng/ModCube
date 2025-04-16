@@ -1,7 +1,0 @@
-set(tauv_mission_SETUP_PY_SETUP_MODULE "distutils.core")
-set(tauv_mission_SETUP_PY_VERSION "0.0.0")
-set(tauv_mission_SETUP_PY_SCRIPTS "scripts/teleop_mission;scripts/mission_manager")
-set(tauv_mission_SETUP_PY_PACKAGES "teleop_mission;mission_manager;missions;tasks")
-set(tauv_mission_SETUP_PY_PACKAGE_DIRS "src/teleop_mission;src/mission_manager;src/missions;src/tasks")
-set(tauv_mission_SETUP_PY_MODULES "")
-set(tauv_mission_SETUP_PY_MODULE_DIRS "")

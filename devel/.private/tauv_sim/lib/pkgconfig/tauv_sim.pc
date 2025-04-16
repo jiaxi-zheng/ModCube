@@ -1,8 +1,0 @@
-prefix=/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_sim
-
-Name: tauv_sim
-Description: Description of tauv_sim
-Version: 0.6.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

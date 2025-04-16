@@ -1,1 +1,0 @@
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_control_msgs/share/roseus/ros/uuv_control_msgs/srv/SwitchToManual.l

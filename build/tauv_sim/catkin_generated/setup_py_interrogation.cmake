@@ -1,7 +1,0 @@
-set(tauv_sim_SETUP_PY_SETUP_MODULE "distutils.core")
-set(tauv_sim_SETUP_PY_VERSION "0.6.1")
-set(tauv_sim_SETUP_PY_SCRIPTS "scripts/disparity_to_depth")
-set(tauv_sim_SETUP_PY_PACKAGES "cameras")
-set(tauv_sim_SETUP_PY_PACKAGE_DIRS "src/cameras")
-set(tauv_sim_SETUP_PY_MODULES "")
-set(tauv_sim_SETUP_PY_MODULE_DIRS "")

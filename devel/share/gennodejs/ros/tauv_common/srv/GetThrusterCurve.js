@@ -1,1 +1,0 @@
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/tauv_common/share/gennodejs/ros/tauv_common/srv/GetThrusterCurve.js

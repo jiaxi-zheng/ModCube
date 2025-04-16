@@ -1,1 +1,0 @@
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_auv_control_allocator/share/roseus/ros/uuv_auv_control_allocator/msg/AUVCommand.l

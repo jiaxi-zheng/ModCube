@@ -1,7 +1,0 @@
-set(tauv_vehicle_SETUP_PY_SETUP_MODULE "distutils.core")
-set(tauv_vehicle_SETUP_PY_VERSION "0.0.0")
-set(tauv_vehicle_SETUP_PY_SCRIPTS "scripts/depth_sensor;scripts/thrusters;scripts/battery;scripts/sonar;scripts/xsens_imu_sync;scripts/teledyne_dvl;scripts/arduino;scripts/oakd;scripts/pinger_localizer")
-set(tauv_vehicle_SETUP_PY_PACKAGES "depth_sensor;thrusters;battery;sonar;xsens_imu_sync;teledyne_dvl;arduino;oakd;pinger_localizer")
-set(tauv_vehicle_SETUP_PY_PACKAGE_DIRS "src/depth_sensor;src/thrusters;src/battery;src/sonar;src/xsens_imu_sync;src/teledyne_dvl;src/arduino;src/oakd;src/pinger_localizer")
-set(tauv_vehicle_SETUP_PY_MODULES "")
-set(tauv_vehicle_SETUP_PY_MODULE_DIRS "")

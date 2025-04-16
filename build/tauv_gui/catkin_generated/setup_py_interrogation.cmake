@@ -1,7 +1,0 @@
-set(tauv_gui_SETUP_PY_SETUP_MODULE "distutils.core")
-set(tauv_gui_SETUP_PY_VERSION "0.0.0")
-set(tauv_gui_SETUP_PY_SCRIPTS "scripts/publish_sonar_map;scripts/map_visualizer")
-set(tauv_gui_SETUP_PY_PACKAGES "sonar_map_publisher;map_visualizer")
-set(tauv_gui_SETUP_PY_PACKAGE_DIRS "src/sonar_map_publisher;src/map_visualizer")
-set(tauv_gui_SETUP_PY_MODULES "")
-set(tauv_gui_SETUP_PY_MODULE_DIRS "")

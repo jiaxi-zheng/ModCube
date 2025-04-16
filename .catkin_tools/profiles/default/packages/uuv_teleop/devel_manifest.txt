@@ -1,9 +1,0 @@
-packages/uuv_simulator/uuv_teleop
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_teleop/cmake.lock /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/./cmake.lock
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_teleop/share/uuv_teleop/cmake/uuv_teleopConfig-version.cmake /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/uuv_teleop/cmake/uuv_teleopConfig-version.cmake
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_teleop/share/uuv_teleop/cmake/uuv_teleopConfig.cmake /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/share/uuv_teleop/cmake/uuv_teleopConfig.cmake
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_teleop/lib/uuv_teleop/vehicle_teleop.py /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_teleop/vehicle_teleop.py
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_teleop/lib/uuv_teleop/vehicle_keyboard_teleop.py /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_teleop/vehicle_keyboard_teleop.py
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_teleop/lib/uuv_teleop/cmake.lock /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_teleop/cmake.lock
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_teleop/lib/uuv_teleop/finned_uuv_teleop.py /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/uuv_teleop/finned_uuv_teleop.py
-/home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/.private/uuv_teleop/lib/pkgconfig/uuv_teleop.pc /home/jiaxi/Projects/aCube/planner/TAUV-ROS-Packages/devel/lib/pkgconfig/uuv_teleop.pc
