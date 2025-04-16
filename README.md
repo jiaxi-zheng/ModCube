@@ -24,51 +24,20 @@ packages/
 ├── modcube_sim_worlds          # Predefined simulation environments
 ├── modcube_vehicle             # Vehicle abstraction layers
 └── uuv_simulator               # Dependencies for underwater hydrodynamics
+
+##
 Getting Started
-1. Launch the Simulation Environment
-bash
-Copy
-Edit
+Launch the Simulation Environment
 roslaunch modcube_sim kingfisher_umd_sim.launch
-This brings up the RS-ModCube simulation in a Gazebo world with underwater dynamics enabled.
 
-2. Start Mission Control & Teleoperation
-bash
-Copy
-Edit
+Start Mission Control & Teleoperation
 roslaunch modcube_mission teleop_mission.launch
-This node handles manual or scripted control of the robot and includes keyboard/joystick-based teleoperation.
 
-3. Send a Navigation Command
-bash
-Copy
-Edit
 tap in goto 2 2 2 1 1 1 1
-2 2 2 represents the target position (x, y, z)
 
-1 1 1 1 represents the target orientation quaternion (qx, qy, qz, qw)
-
-This command interfaces with the mission planner to reconfigure or move the robot in the desired direction.
-
-Key Features
-Self-reconfiguration via magnetic docking with tolerance-guided alignment
-
-Monte Carlo–based hydrodynamic modeling using frontal drag approximations
-
-Model-based PD control with thrust allocation for power efficiency
-
-Minimum snap trajectory generation for smooth, accurate path following
-
-Benchmarking tools for actuation capability and morphological analysis
-
-Example Use Cases
-Spiral trajectory tracking in 3D
-
-Two-module autonomous docking in constrained space
-
-Multi-module formation with Möbius trajectory planning
-
-For visuals and demos, see our project site.
+# 2 2 2 represents the target position (x, y, z)
+# 1 1 1 1 represents the target orientation quaternion (qx, qy, qz, qw)
+##
 
 Citation
 If you use this repository or refer to our methodology, please cite the following publication:
@@ -86,16 +55,11 @@ Edit
   year      = {2025},
   publisher = {IEEE}
 }
+
 🤝 Acknowledgements
 This work would not have been possible without the support of my co-authors, mentors, and the collaborative teams at Carnegie Mellon University and Westlake University.
 We also gratefully acknowledge the foundational work done by the CMU TartanAUV team.
 
 For questions or contributions, feel free to open an issue or contact me via the project website.
-
-yaml
-Copy
-Edit
-
 ---
 
-Let me know if you'd like to generate READMEs per sub-package (e.g., `modcube_mission/README.md`)
