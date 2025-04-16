@@ -12,12 +12,12 @@ This repository contains the simulation, control, and mission planning framework
 
 ```bash
 packages/
-├── modcube_common              # Shared utilities and core control logic
-├── modcube_config              # Configuration files and URDFs for simulation
+├── modcube_common              # Shared utilities and core planning/control logic
+├── modcube_config              # Configuration files and URDFs
 ├── modcube_mission             # Mission execution and teleoperation modules
 ├── modcube_msgs                # Custom ROS messages and service definitions
-├── modcube_sim                 # Gazebo simulation interface and launch files
-├── modcube_sim_gazebo_plugins  # Underwater dynamics plugins for Gazebo
+├── modcube_sim                 # Gazebo simulation interface
+├── modcube_sim_gazebo_plugins  # Plugins for Gazebo
 ├── modcube_sim_worlds          # Simulation environments
 ├── modcube_vehicle             # Vehicle-specific modules and configurations
 └── uuv_simulator               # Underwater vehicle simulator dependencies
