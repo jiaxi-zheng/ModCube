@@ -1,5 +1,0 @@
-#!/usr/bin/env python3
-from canbus_handler import canbus_handler
-
-if __name__ == "__main__":
-    canbus_handler.main()

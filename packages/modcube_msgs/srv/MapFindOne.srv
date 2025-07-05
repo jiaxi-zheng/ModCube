@@ -1,4 +1,0 @@
-string tag
----
-modcube_msgs/FeatureDetection detection
-bool success

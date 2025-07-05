@@ -1,5 +1,0 @@
-<launch>
-    <node pkg="modcube_vehicle" type="camera_info_pub" name="camera_info_pub" output="screen">
-    </node>
-    
-</launch>

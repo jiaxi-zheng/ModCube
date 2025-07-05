@@ -1,5 +1,0 @@
-string tag
-geometry_msgs/Point point
----
-modcube_msgs/FeatureDetection detection
-bool success
