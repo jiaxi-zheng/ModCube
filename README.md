@@ -237,62 +237,12 @@ The framework has been validated with the following performance characteristics:
 
 ---
 
-## Development Guide
-
-### Adding New Modules
-
-1. **Create new package**:
-   ```bash
-   catkin_create_pkg my_module roscpp rospy modcube_msgs
-   ```
-
-2. **Follow naming convention**:
-   - Package: `modcube_<module_name>`
-   - Nodes: `<module_name>_node`
-   - Topics: `/modcube/<module_name>/...`
-
-3. **Implement required interfaces**:
-   - Subscribe to `/modcube/cmd_vel` for velocity commands
-   - Publish to `/modcube/state` for status updates
-
 ### Code Style
 
 - Follow ROS C++ Style Guide
 - Use `clang-format` for code formatting
 - Include comprehensive unit tests
 - Document public APIs with Doxygen
-
----
-
-## Applications
-
-RS-ModCubes has been successfully applied to:
-
-- **Underwater Inspection**: Pipeline and hull inspection
-- **Environmental Monitoring**: Water quality assessment
-- **Search and Rescue**: Debris field exploration
-- **Scientific Research**: Marine biology studies
-- **Infrastructure Maintenance**: Underwater structure repair
-
----
-
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on:
-
-- Code style and standards
-- Pull request process
-- Issue reporting
-- Feature requests
-
----
-
-## Documentation
-
-- **API Documentation**: [docs/api/](docs/api/)
-- **User Manual**: [docs/user_manual.md](docs/user_manual.md)
-- **Developer Guide**: [docs/developer_guide.md](docs/developer_guide.md)
-- **Tutorials**: [docs/tutorials/](docs/tutorials/)
 
 ---
 
@@ -318,17 +268,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## Authors & Acknowledgments
-
-### Primary Authors
-- **Jiaxi Zheng** - *Project Lead*
-- **Guangmin Dai** - *Control Systems*
-- **Botao He** - *Simulation Framework*
-- **Zhaoyang Mu** - *Hardware Integration*
-- **Zhaochen Meng** - *Mission Planning*
-- **Tianyi Zhang** - *Multi-robot Coordination*
-- **Weiming Zhi** - *Software Architecture*
-- **Dixia Fan** - *Research Supervision*
+## Acknowledgments
 
 ### Acknowledgments
 - CMU TartanAUV Team for the foundational Kingfisher framework
